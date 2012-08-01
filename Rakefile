@@ -5,6 +5,7 @@ require 'rake'
 require 'rake/clean'
 require 'rubygems/package_task'
 require 'rake/testtask'
+require 'rspec/core/rake_task'
 require 'rdoc/task'
 require './rake/rpmtask'
 
@@ -55,4 +56,8 @@ Rake::RpmTask.new(RPM_SPEC, {:suffix => '.in', :pkg_version => PKG_VERSION}) do 
   rpm.need_tar = true
   rpm.package_files.include("lib/*")
   rpm.topdir = "#{RPMBUILD_DIR}"
+end
+
+RSpec::Core::RakeTask.new do |t|
+  t.pattern = FileList['spec/**/*.rb']
 end

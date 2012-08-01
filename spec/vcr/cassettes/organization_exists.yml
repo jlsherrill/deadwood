@@ -1,0 +1,42 @@
+--- 
+recorded_with: VCR 2.2.4
+http_interactions: 
+- request: 
+    method: get
+    uri: https://10.11.230.105/katello/api/organizations
+    body: 
+      string: ""
+    headers: 
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="sN1Fxd2KQuAohNmxpqPwJv4LhBk1alTwr5tl05hj0Sc", oauth_signature="qRvCmb1VildKLI%2FuWb4oswBEx0U%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      Accept: 
+      - application/json
+      User-Agent: 
+      - OAuth gem v0.4.6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Wed, 01 Aug 2012 15:02:26 GMT
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Transfer-Encoding: 
+      - chunked
+      Etag: 
+      - "\"316ddda87c98a0f737c5fe3ea74b8e3f\""
+      X-Runtime: 
+      - "0.140121"
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+    body: 
+      string: "[{\"service_levels\":[],\"cp_key\":\"ACME_Corporation\",\"task_id\":null,\"name\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\",\"description\":\"ACME_Corporation Organization\",\"id\":1,\"updated_at\":\"2012-07-02T18:47:39Z\"}]"
+    http_version: 
+  recorded_at: Wed, 01 Aug 2012 17:38:20 GMT

@@ -1,0 +1,5 @@
+:katello:
+  :use_oauth: true
+  :consumer_key: oauth_consumer_key
+  :consumer_secret: oauth_consumer_secret
+  :site: https://example.com/katello/api
