@@ -1,6 +1,6 @@
 require 'active_resource'
-require File.join(File.dirname(__FILE__), 'deadwood/model', 'activation_key')
 require File.join(File.dirname(__FILE__), 'deadwood/model', 'base')
+require File.join(File.dirname(__FILE__), 'deadwood/model', 'activation_key')
 require File.join(File.dirname(__FILE__), 'deadwood/model', 'changeset')
 require File.join(File.dirname(__FILE__), 'deadwood/model', 'consumer')
 require File.join(File.dirname(__FILE__), 'deadwood/model', 'crl')

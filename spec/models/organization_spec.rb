@@ -13,7 +13,6 @@ describe Deadwood::Katello::Organization do
 
   it "should find an org if an org exists" do
     VCR.use_cassette 'organization_exists' do
-      #Deadwood::Katello::Base.site = 'https://10.11.230.105:443/katello/api'
       Deadwood::Katello::Base.config = {
         :katello_user => 'admin',
         :site => 'https://10.11.230.105:443/katello/api',
