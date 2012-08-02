@@ -8,37 +8,37 @@ http_interactions:
     headers: 
       Accept: 
       - application/json
-      User-Agent: 
-      - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="PNODlxvQNZAl3MH6mjAPz4kRFTnTvCDXTn6MZENk", oauth_signature="ZU9o9GQLYAeC22y%2BjxMcMRjAZzU%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="R2cX42eZgrwnH4xvspgvR7o6J90KrdsRSl1SvxmDH4", oauth_signature="Vce1fFo8OsoQiOOURGkwsppjFZM%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Etag: 
-      - "\"922168924bc6f28bd49eb0ed33eef25b\""
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      X-Runtime: 
-      - "0.221260"
-      Date: 
-      - Thu, 02 Aug 2012 15:18:10 GMT
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
       Content-Type: 
       - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
       Transfer-Encoding: 
       - chunked
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      X-Runtime: 
+      - "0.112026"
+      Etag: 
+      - "\"b79665f4522f9d0a40652e69028467a6\""
+      Date: 
+      - Thu, 02 Aug 2012 16:32:25 GMT
     body: 
-      string: "[{\"name\":\"ACME_Corporation\",\"task_id\":null,\"cp_key\":\"ACME_Corporation\",\"service_levels\":[],\"id\":1,\"created_at\":\"2012-07-02T18:47:39Z\",\"description\":\"ACME_Corporation Organization\",\"updated_at\":\"2012-07-02T18:47:39Z\"}]"
+      string: "[{\"service_levels\":[],\"updated_at\":\"2012-07-02T18:47:39Z\",\"task_id\":null,\"created_at\":\"2012-07-02T18:47:39Z\",\"id\":1,\"description\":\"ACME_Corporation Organization\",\"cp_key\":\"ACME_Corporation\",\"name\":\"ACME_Corporation\"}]"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 recorded_with: VCR 2.2.4
