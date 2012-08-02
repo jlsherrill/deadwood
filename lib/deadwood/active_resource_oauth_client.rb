@@ -29,6 +29,7 @@ module ActiveResourceOAuthClient
       unless use_oauth_for_url?("#{site.scheme}://#{site.host}:#{site.port}#{path}")
         return request_without_oauth(method, path, *arguments)
       end
+
       result = ActiveSupport::Notifications.instrument("request.active_resource") do |payload|
         payload[:method] = method
         payload[:request_uri] = "#{site.scheme}://#{site.host}:#{site.port}#{path}"
@@ -61,7 +62,13 @@ module ActiveResourceOAuthClient
         url.include?(Deadwood::Katello::Base.config[:site])
     end
 
+    def default_header
+      @default_header ||= {}
+      config = Deadwood::Katello::Base.config || {}
+      @default_header = {'HTTP_KATELLO_USER' => config[:katello_user]}
+    end
     alias_method_chain :request, :oauth
 
   end
+
 end

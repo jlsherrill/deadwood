@@ -15,7 +15,7 @@
 Summary: Ruby Client for interacting with a Katello server
 Name: rubygem-deadwood
 Version: 0.0.1
-Release: 0.20120801110226gitb6b1f93%{?dist}
+Release: 0.20120802111810git0819311%{?dist}
 Group: Development/Languages
 License: ASL 2.0
 URL: http://aeolusproject.org
