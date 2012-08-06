@@ -23,4 +23,33 @@ describe Deadwood::Katello::Organization do
       (orgs.size > 0).should be_true
     end
   end
+
+  it "should find the default organization if default organization exists" do
+    VCR.use_cassette 'organization_default_exists' do
+      Deadwood::Katello::Base.config = {
+        :katello_user => 'admin',
+        :site => 'https://10.11.230.105:443/katello/api',
+        :consumer_key => 'cloud_forms',
+        :consumer_secret => 'MvhGuh1kLtOAelq5h/ebfcjW'
+      }
+      org = Deadwood::Katello::Organization.find(:all).first
+      org.nil?.should be_false
+      (org.id == 1).should be_true
+    end
+  end
+
+  it "should find default organization by id if the organization exists" do
+    VCR.use_cassette 'organization_1_exists' do
+      Deadwood::Katello::Base.config = {
+        :katello_user => 'admin',
+        :site => 'https://10.11.230.105:443/katello/api',
+        :consumer_key => 'cloud_forms',
+        :consumer_secret => 'MvhGuh1kLtOAelq5h/ebfcjW'
+      }
+      default_org = Deadwood::Katello::Organization.find(:all).first
+      org = Deadwood::Katello::Organization.find(default_org.cp_key)
+      org.nil?.should be_false
+    end
+
+  end
 end

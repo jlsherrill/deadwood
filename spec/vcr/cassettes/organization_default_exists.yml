@@ -14,16 +14,16 @@ http_interactions:
       Accept: 
       - application/json
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="kbnhpWAEd5c7uASNTgjT85w2kz8OgV7ZMsG0mqyvu20", oauth_signature="DmbFCGwn5AlMK68OsbgZbfKrMXw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="iHjyHcDDAqus2xdKgjT5qfdGBIZ9XxebKteognfZg", oauth_signature="E4eVjtYOTnH9m9u7uH3TiVtlITs%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
   response: 
     status: 
       code: 200
       message: OK
     headers: 
       X-Runtime: 
-      - "0.178528"
+      - "0.091751"
       Date: 
-      - Fri, 03 Aug 2012 21:13:39 GMT
+      - Fri, 03 Aug 2012 21:13:40 GMT
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
       Transfer-Encoding: 
@@ -35,10 +35,10 @@ http_interactions:
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Etag: 
-      - "\"204917344c1d55d95ecde4f1e89b22b8\""
+      - "\"5a3e10c96db3b56936373dd213ecdc54\""
       Content-Type: 
       - application/json; charset=utf-8
     body: 
-      string: "[{\"service_levels\":[],\"updated_at\":\"2012-07-02T18:47:39Z\",\"created_at\":\"2012-07-02T18:47:39Z\",\"id\":1,\"description\":\"ACME_Corporation Organization\",\"task_id\":null,\"cp_key\":\"ACME_Corporation\",\"name\":\"ACME_Corporation\"}]"
+      string: "[{\"service_levels\":[],\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\",\"id\":1,\"description\":\"ACME_Corporation Organization\",\"updated_at\":\"2012-07-02T18:47:39Z\",\"name\":\"ACME_Corporation\",\"task_id\":null}]"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT

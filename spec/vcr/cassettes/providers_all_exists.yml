@@ -1,0 +1,42 @@
+--- 
+recorded_with: VCR 2.2.4
+http_interactions: 
+- request: 
+    method: get
+    uri: https://10.11.230.105/katello/api/providers?organization_id=ACME_Corporation
+    body: 
+      string: ""
+    headers: 
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Http-Katello-User: 
+      - admin
+      Accept: 
+      - application/json
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="5mNSNuviCBlTUd8tvf7kTTeWhb6IK7cTt6yO0U", oauth_signature="T0NxzVRBYS2ioyGv%2Bt8U5o6s2Qk%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      X-Runtime: 
+      - "0.016172"
+      Date: 
+      - Fri, 03 Aug 2012 21:13:40 GMT
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Transfer-Encoding: 
+      - chunked
+      Cache-Control: 
+      - no-cache
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Type: 
+      - application/json; charset=utf-8
+    body: 
+      string: "{\"errors\":[\"Not found\"],\"displayMessage\":\"Not found\"}"
+    http_version: 
+  recorded_at: Wed, 01 Aug 2012 17:38:20 GMT

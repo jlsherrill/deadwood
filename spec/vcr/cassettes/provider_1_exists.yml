@@ -3,7 +3,7 @@ recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: get
-    uri: https://10.11.230.105/katello/api/organizations
+    uri: https://10.11.230.105/katello/api/providers/1
     body: 
       string: ""
     headers: 
@@ -14,16 +14,16 @@ http_interactions:
       Accept: 
       - application/json
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="kbnhpWAEd5c7uASNTgjT85w2kz8OgV7ZMsG0mqyvu20", oauth_signature="DmbFCGwn5AlMK68OsbgZbfKrMXw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="4cr6OChbXwj2RvjmScARtzAeqwia16Afs540FNRSCaQ", oauth_signature="0kApbsl1M%2BU5zgTh6Xuu1phky18%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
   response: 
     status: 
       code: 200
       message: OK
     headers: 
       X-Runtime: 
-      - "0.178528"
+      - "0.043256"
       Date: 
-      - Fri, 03 Aug 2012 21:13:39 GMT
+      - Fri, 03 Aug 2012 21:13:40 GMT
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
       Transfer-Encoding: 
@@ -35,10 +35,10 @@ http_interactions:
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Etag: 
-      - "\"204917344c1d55d95ecde4f1e89b22b8\""
+      - "\"e8a0ea3c2eb58a77cf8f51e28a790bb5\""
       Content-Type: 
       - application/json; charset=utf-8
     body: 
-      string: "[{\"service_levels\":[],\"updated_at\":\"2012-07-02T18:47:39Z\",\"created_at\":\"2012-07-02T18:47:39Z\",\"id\":1,\"description\":\"ACME_Corporation Organization\",\"task_id\":null,\"cp_key\":\"ACME_Corporation\",\"name\":\"ACME_Corporation\"}]"
+      string: "{\"task_status_id\":null,\"updated_at\":\"2012-07-02T18:47:39Z\",\"name\":\"Red Hat\",\"provider_type\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.com\",\"sync_state\":\"not_synced\",\"description\":null,\"id\":1,\"last_sync\":null,\"organization_id\":1}"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
