@@ -68,6 +68,16 @@ module Deadwood
         end
         rescue ArgumentError
       end
+
+      def collection_path(prefix_options = {}, query_options = nil)
+        prefix_options, query_options = split_options(prefix_options) if query_options.nil?
+        query_options.merge!(self.attributes)
+        "#{self.class.prefix(prefix_options)}#{self.class.collection_name}#{query_string(query_options)}"
+      end
+
+      def query_string(options)
+        "?#{options.to_query}" unless options.nil? || options.empty?
+      end
     end
   end
 end

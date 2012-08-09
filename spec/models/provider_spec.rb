@@ -27,7 +27,7 @@ describe Deadwood::Katello::Organization do
 
   it "should find all providers if all providers exist" do
     VCR.use_cassette 'providers_all_exists' do
-      providers = Deadwood::Katello::Provider.find(:all, :params => {:organization_id => "ACME_Corporation"})
+      providers = Deadwood::Katello::Provider.find(:all, :from=> "/katello/api/organizations/ACME_Corporation/providers")
       providers.nil?.should be_false
     end
 
