@@ -7,39 +7,39 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      User-Agent: 
-      - OAuth gem v0.4.6
       Http-Katello-User: 
       - admin
       Accept: 
       - application/json
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="J9Vok5GF96JuspCDi9WQVvNrTAmTAW8hqzuUmOypQ", oauth_signature="xwG7yda3GNnuFNuhTwvh95d%2BCEY%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="GE3s9FSMfIzVltp57F4IF7WtDfKvecpYSE2iGs85n74", oauth_signature="KWKgGvi9m5owgb79WCIg3nknDC4%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Runtime: 
-      - "0.075385"
-      Date: 
-      - Fri, 03 Aug 2012 21:13:40 GMT
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
-      Transfer-Encoding: 
-      - chunked
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      Etag: 
-      - "\"5228430e65a1f76768458256bfe75088\""
       Content-Type: 
       - application/json; charset=utf-8
+      Etag: 
+      - "\"2b442c10f3b789b5f0ed5ba0bd9299b4\""
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Transfer-Encoding: 
+      - chunked
+      X-Runtime: 
+      - "0.071964"
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Date: 
+      - Thu, 09 Aug 2012 12:59:31 GMT
     body: 
-      string: "[{\"name\":\"ACME_Corporation\",\"service_levels\":[],\"description\":\"ACME_Corporation Organization\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\",\"id\":1,\"task_id\":null,\"updated_at\":\"2012-07-02T18:47:39Z\"}]"
+      string: "[{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-07-02T18:47:39Z\",\"description\":\"ACME_Corporation Organization\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}]"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
@@ -48,38 +48,38 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      User-Agent: 
-      - OAuth gem v0.4.6
       Http-Katello-User: 
       - admin
       Accept: 
       - application/json
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="3cNpjIU0YUPlDU9raX2EsVqNjbJypTbMS7950eOFFQ", oauth_signature="m3NuTKb4bXTqOcEWqW02FlIrbsM%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="KT3zWXE3xKOGyvSiUU5yqDdGoYUmZFwICk43zRWeY", oauth_signature="OxnXKEUFzjvO1v5jflCRTvzi1Cc%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Runtime: 
-      - "0.077453"
-      Date: 
-      - Fri, 03 Aug 2012 21:13:40 GMT
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
-      Transfer-Encoding: 
-      - chunked
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      Etag: 
-      - "\"92c26cfc0cb1d360aa4d55ffcdab87d0\""
       Content-Type: 
       - application/json; charset=utf-8
+      Etag: 
+      - "\"bdb73986019a1b5c05a30ead1d0c8ffa\""
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Transfer-Encoding: 
+      - chunked
+      X-Runtime: 
+      - "0.062211"
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Date: 
+      - Thu, 09 Aug 2012 12:59:31 GMT
     body: 
-      string: "{\"updated_at\":\"2012-07-02T18:47:39Z\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"description\":\"ACME_Corporation Organization\",\"created_at\":\"2012-07-02T18:47:39Z\",\"service_levels\":[],\"id\":1,\"task_id\":null}"
+      string: "{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-07-02T18:47:39Z\",\"description\":\"ACME_Corporation Organization\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT

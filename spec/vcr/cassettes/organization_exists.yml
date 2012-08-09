@@ -7,38 +7,38 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      User-Agent: 
-      - OAuth gem v0.4.6
       Http-Katello-User: 
       - admin
       Accept: 
       - application/json
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="kbnhpWAEd5c7uASNTgjT85w2kz8OgV7ZMsG0mqyvu20", oauth_signature="DmbFCGwn5AlMK68OsbgZbfKrMXw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="IgVGUgJ8FznadyDpRxMlRVzjzlXxQFs0JRqZdGQbXw", oauth_signature="ri%2FKN51bVI%2F3wfAdthjjzOguiVY%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Runtime: 
-      - "0.178528"
-      Date: 
-      - Fri, 03 Aug 2012 21:13:39 GMT
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
-      Transfer-Encoding: 
-      - chunked
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      Etag: 
-      - "\"204917344c1d55d95ecde4f1e89b22b8\""
       Content-Type: 
       - application/json; charset=utf-8
+      Etag: 
+      - "\"2b442c10f3b789b5f0ed5ba0bd9299b4\""
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Transfer-Encoding: 
+      - chunked
+      X-Runtime: 
+      - "0.127380"
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Date: 
+      - Thu, 09 Aug 2012 12:59:31 GMT
     body: 
-      string: "[{\"service_levels\":[],\"updated_at\":\"2012-07-02T18:47:39Z\",\"created_at\":\"2012-07-02T18:47:39Z\",\"id\":1,\"description\":\"ACME_Corporation Organization\",\"task_id\":null,\"cp_key\":\"ACME_Corporation\",\"name\":\"ACME_Corporation\"}]"
+      string: "[{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-07-02T18:47:39Z\",\"description\":\"ACME_Corporation Organization\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}]"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
