@@ -61,6 +61,13 @@ module Deadwood
           config[:consumer_key] && config[:consumer_secret] && config[:site]
         end
       end
+
+      def load_attributes_from_response(response)
+        if response['Content-Length'] != "0" && response.body.strip.size > 0
+          load(self.class.format.decode(response.body))
+        end
+        rescue ArgumentError
+      end
     end
   end
 end

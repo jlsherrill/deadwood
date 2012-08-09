@@ -40,12 +40,21 @@ describe Deadwood::Katello::Organization do
     end
   end
 
-#Updates aren't allowed
   it "should update the default organization name if the organization exists" do
     VCR.use_cassette 'organization_update' do
       default_org = Deadwood::Katello::Organization.find(:all).first
+
+      # Need to remove the attributes that are protected by katello
+      default_org.attributes.delete(:id)
+      default_org.attributes.delete(:task_id)
+      default_org.attributes.delete(:service_levels)
+      default_org.attributes.delete(:updated_at)
+      default_org.attributes.delete(:created_at)
+      default_org.attributes.delete(:cp_key)
+
+      # Make our description update
       default_org.update_attribute(:description, "Updated description")
-     # default_org = Deadwood::Katello::Organization.find(:all).first
+      default_org = Deadwood::Katello::Organization.find(:all).first
       default_org.description.include?("Updated description").should be_true
     end
   end

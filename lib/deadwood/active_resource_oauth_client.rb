@@ -23,6 +23,7 @@ require 'ruby-debug'
 # hence this whole file is being licensed under the MIT License to err on the side of safety.
 module ActiveResourceOAuthClient
   ActiveResource::Connection.class_eval do
+
     def request_with_oauth(method, path, *arguments)
       @oauth_config = Deadwood::Katello::Base.config || {}
       # Take care to fall back to the standard request method if we don't have full OAuth credentials
@@ -70,5 +71,4 @@ module ActiveResourceOAuthClient
     alias_method_chain :request, :oauth
 
   end
-
 end
