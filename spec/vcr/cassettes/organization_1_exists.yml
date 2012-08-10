@@ -1,5 +1,4 @@
 --- 
-recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: get
@@ -7,37 +6,37 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="pC7B2k45cSwiG3fAniHRdP2LT0MKGsibkygFywpo8", oauth_signature="GMsBuELMeOdkGLCJDSWbTl%2B2%2BYI%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
       Accept: 
       - application/json
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="UcaF55kODZAKGbxg7OIczfxaeci3aAYzt5oYHdrX3w", oauth_signature="4xXDzUbbbd88838zBkr0XQzMh%2Bo%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
   response: 
     status: 
       code: 200
       message: OK
     headers: 
+      Etag: 
+      - "\"379072b2370f9a967d92e2999ae8d266\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      Date: 
+      - Fri, 10 Aug 2012 15:30:12 GMT
       Cache-Control: 
       - max-age=0, private, must-revalidate
       Content-Type: 
       - application/json; charset=utf-8
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Date: 
-      - Fri, 10 Aug 2012 14:49:18 GMT
-      X-Runtime: 
-      - "0.077894"
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
-      Transfer-Encoding: 
-      - chunked
-      Etag: 
-      - "\"379072b2370f9a967d92e2999ae8d266\""
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
+      X-Runtime: 
+      - "0.076827"
+      Transfer-Encoding: 
+      - chunked
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
     body: 
       string: "[{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-08-09T14:52:28Z\",\"description\":\"Updated description\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}]"
     http_version: 
@@ -48,38 +47,39 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="M73UNPEIzZzAokfInhpG36g3eiQgagy6zAo085FLOwU", oauth_signature="V6xdOiuJfRl9k2Pul4sr%2Bs%2Bs5HA%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
       Accept: 
       - application/json
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="eC7UgFDnTfU3U8iWBERnj3l2LPYV6yU7mv3DAklgqI", oauth_signature="Zzw5sj5CyjTTScFuG%2FX9wxhf9KM%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
   response: 
     status: 
       code: 200
       message: OK
     headers: 
+      Etag: 
+      - "\"71b02ab3385268e3127bec967ea51eb6\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      Date: 
+      - Fri, 10 Aug 2012 15:30:12 GMT
       Cache-Control: 
       - max-age=0, private, must-revalidate
       Content-Type: 
       - application/json; charset=utf-8
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Date: 
-      - Fri, 10 Aug 2012 14:49:18 GMT
-      X-Runtime: 
-      - "0.056861"
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
-      Transfer-Encoding: 
-      - chunked
-      Etag: 
-      - "\"71b02ab3385268e3127bec967ea51eb6\""
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
+      X-Runtime: 
+      - "0.075044"
+      Transfer-Encoding: 
+      - chunked
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
     body: 
       string: "{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-08-09T14:52:28Z\",\"description\":\"Updated description\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
+recorded_with: VCR 2.2.4

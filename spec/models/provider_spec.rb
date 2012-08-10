@@ -60,4 +60,15 @@ describe Deadwood::Katello::Organization do
       provider.update_attribute(:repository_url, 'https://cdn.redhat.com')
     end
   end
+
+  it "should create a provider" do
+    VCR.use_cassette 'create_provider_for_default_org' do
+      size = Deadwood::Katello::Provider.find(:all, :from=> "/katello/api/organizations/ACME_Corporation/providers").size
+      provider = Deadwood::Katello::Provider.new(:organization_id => 'ACME_Corporation', :provider_type => 'Custom', :repository_url => 'http://repo.example.com', :name => 'test_provider_name', :description => 'Test provider description')
+      provider.save
+      new_size = Deadwood::Katello::Provider.find(:all, :from=> "/katello/api/organizations/ACME_Corporation/providers").size
+      (new_size == size + 1).should be_true
+      provider.destroy
+    end
+  end
 end
