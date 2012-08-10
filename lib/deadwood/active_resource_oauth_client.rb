@@ -18,6 +18,7 @@
 
 require 'oauth'
 require 'ruby-debug'
+require 'json'
 # Monkey-patch ActiveResource to allow us to merge our OAuth headers in.
 # Portions of the below are taken from Active Resource which is MIT licensed;
 # hence this whole file is being licensed under the MIT License to err on the side of safety.
@@ -39,6 +40,12 @@ module ActiveResourceOAuthClient
           @oauth_config[:consumer_secret],
           :site => "#{site.scheme}://#{site.host}:#{site.port}"  )
         token = OAuth::AccessToken.new(oauth_consumer)
+        # Katello objects must not include the id attribute on updates
+        if method.to_s.include?('put')
+          obj = JSON.parse(arguments.first)
+          obj[obj.keys.first].delete('id')
+          arguments[0] = obj.to_json
+        end
         base_request = oauth_consumer.create_signed_request(method, path, token, {}, *arguments)
         payload[:result] = http.request(base_request)
       end

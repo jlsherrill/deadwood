@@ -33,13 +33,31 @@ describe Deadwood::Katello::Organization do
 
   end
 
-#updates aren't allowed
-  #it "should update a provider" do
-  #  VCR.use_cassette 'update_provider_for_org' do
-  #    provider = Deadwood::Katello::Provider.find(1)
-  #    provider.update_attribute(:name, 'Red Hat Updated')
-  #    provider = Deadwood::Katello::Provider.find(1)
-  #    (provider.name.include? 'Red Hat Updated').should be_true
-  #  end
-  #end
+  it "should update a provider" do
+    VCR.use_cassette 'update_provider_for_org' do
+      provider = Deadwood::Katello::Provider.find(1)
+      provider.attributes.delete(:provider_type)
+      provider.attributes.delete(:organization_id)
+      provider.attributes.delete(:created_at)
+      provider.attributes.delete(:task_status_id)
+      provider.attributes.delete(:sync_state)
+      provider.attributes.delete(:description)
+      provider.attributes.delete(:updated_at)
+      provider.attributes.delete(:last_sync)
+      provider.attributes.delete(:name)
+      provider.update_attribute(:repository_url, 'https://cdn.redhat.tv')
+      provider = Deadwood::Katello::Provider.find(1)
+      (provider.repository_url.include? 'https://cdn.redhat.tv').should be_true
+      provider.attributes.delete(:provider_type)
+      provider.attributes.delete(:organization_id)
+      provider.attributes.delete(:created_at)
+      provider.attributes.delete(:task_status_id)
+      provider.attributes.delete(:sync_state)
+      provider.attributes.delete(:description)
+      provider.attributes.delete(:updated_at)
+      provider.attributes.delete(:last_sync)
+      provider.attributes.delete(:name)
+      provider.update_attribute(:repository_url, 'https://cdn.redhat.com')
+    end
+  end
 end

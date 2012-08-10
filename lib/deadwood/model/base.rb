@@ -78,6 +78,7 @@ module Deadwood
       def query_string(options)
         "?#{options.to_query}" unless options.nil? || options.empty?
       end
+
     end
   end
 end

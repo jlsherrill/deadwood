@@ -1,4 +1,5 @@
 --- 
+recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: get
@@ -8,37 +9,36 @@ http_interactions:
     headers: 
       User-Agent: 
       - OAuth gem v0.4.6
-      Accept: 
-      - application/json
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="gc4s8B1BFff6GB0iGvo9SqLefGkHFU6tygsGbEDKMk", oauth_signature="9K6QIBsuhtXWxeX0Pkp%2BfieyDik%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="5IP8QBMvpsYXMhiG4J1GIaUgNYuyIiyj0TNi4n5GHKo", oauth_signature="9zTC%2BWHHYrHxdFuLbhitHU0YmhY%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
+      Accept: 
+      - application/json
   response: 
     status: 
       code: 200
       message: OK
     headers: 
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Content-Type: 
+      - application/json; charset=utf-8
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      Date: 
+      - Fri, 10 Aug 2012 14:49:18 GMT
+      X-Runtime: 
+      - "0.086425"
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
       Transfer-Encoding: 
       - chunked
-      X-Runtime: 
-      - "0.198699"
       Etag: 
       - "\"379072b2370f9a967d92e2999ae8d266\""
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Content-Type: 
-      - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Date: 
-      - Thu, 09 Aug 2012 21:11:01 GMT
     body: 
       string: "[{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-08-09T14:52:28Z\",\"description\":\"Updated description\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}]"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
-recorded_with: VCR 2.2.4
