@@ -1,5 +1,4 @@
 --- 
-recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: get
@@ -7,38 +6,39 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="OQbEA9HmBAZDv1mLlim96P0igscOHxSeICCgL9r6XyU", oauth_signature="F5nyyrHEk204ulsdX9FfZotf6%2FA%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
-      Accept: 
-      - application/json
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Accept: 
+      - application/json
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="EYOUmdlusDBW75yjBiaOJJn96ixw9lp2ZbXRJyBtLJA", oauth_signature="%2B%2BdZ9GbFqBKCBO%2FfQ6kbqDc8SNk%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
   response: 
     status: 
       code: 200
       message: OK
     headers: 
+      Date: 
+      - Tue, 14 Aug 2012 20:37:35 GMT
       Content-Type: 
       - application/json; charset=utf-8
-      Date: 
-      - Tue, 14 Aug 2012 18:34:01 GMT
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
       Etag: 
-      - "\"e3eee9c4f1aaedb9eb26a0f87ecfcde3\""
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
+      - "\"d760bc70fe2036d892015fcbd688db9b\""
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
       X-Runtime: 
-      - "0.022589"
+      - "0.143471"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
       Transfer-Encoding: 
       - chunked
     body: 
-      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-14T18:33:39Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.com\"}"
+      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-14T20:36:39Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.com\"}"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
+recorded_with: VCR 2.2.4

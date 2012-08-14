@@ -1,5 +1,4 @@
 --- 
-recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: get
@@ -7,35 +6,35 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="PSL3fKjFVIVgmlK5oXT95cSa2CObiCCN2utLWLYdQ", oauth_signature="xlXQ4YO32bq9IU87jK7IfWKEM8o%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
-      Accept: 
-      - application/json
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Accept: 
+      - application/json
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="Dxx9bVAwSGzZTUI6pPDcDn0xujOpSc1QgDN94jUg", oauth_signature="10sYYeOW7ZkeHzq%2BQ321ETmcaxM%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
   response: 
     status: 
       code: 200
       message: OK
     headers: 
+      Date: 
+      - Tue, 14 Aug 2012 20:37:35 GMT
       Content-Type: 
       - application/json; charset=utf-8
-      Date: 
-      - Tue, 14 Aug 2012 18:34:01 GMT
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
       Etag: 
-      - "\"c40086bbfededa75dc12d2cab50677a5\""
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
+      - "\"e9458eb152b72d59f7f6a85152c8af44\""
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
       X-Runtime: 
-      - "0.044002"
+      - "0.046369"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
       Transfer-Encoding: 
       - chunked
     body: 
@@ -44,19 +43,20 @@ http_interactions:
         MIICqzCCAZMCAQEwDQYJKoZIhvcNAQEFBQAwgYsxCzAJBgNVBAYTAlVTMRcwFQYD
         VQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEQMA4GA1UEChMH
         UmVkIEhhdDERMA8GA1UECxMIQ2xvdWQgQlUxLDAqBgNVBAMTI2NhbGZvbnNvLWth
-        dGVsbG8udXNlcnN5cy5yZWRoYXQuY29tFw0xMjA4MTQxODM0MDFaFw0xMjA4MTUx
-        ODM0MDFaoIHSMIHPMIHABgNVHSMEgbgwgbWAFMSqIkPSItVBrG7zs494s6YAF7b3
+        dGVsbG8udXNlcnN5cy5yZWRoYXQuY29tFw0xMjA4MTQyMDM3MzVaFw0xMjA4MTUy
+        MDM3MzVaoIHSMIHPMIHABgNVHSMEgbgwgbWAFMSqIkPSItVBrG7zs494s6YAF7b3
         oYGRpIGOMIGLMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xpbmEx
         EDAOBgNVBAcTB1JhbGVpZ2gxEDAOBgNVBAoTB1JlZCBIYXQxETAPBgNVBAsTCENs
         b3VkIEJVMSwwKgYDVQQDEyNjYWxmb25zby1rYXRlbGxvLnVzZXJzeXMucmVkaGF0
-        LmNvbYIJAOD3fdX2G4QqMAoGA1UdFAQDAgEBMA0GCSqGSIb3DQEBBQUAA4IBAQCm
-        IEvUYWL6F0rdJcGDri1kCyR5OuO1dLRGkdlTwjkSNbCQx1ppz5YsnGaIfYeBAG0k
-        HX6IvqvhJWv3C7sPGAFJ3pJOyCcJXB8DQ+t1MRxF/n5sRGS46o88CmllRb9xST+1
-        /nvpL2T/fI3dNY5f4/ZJr8Hcsr8rf//9aUkuAhmNmvYUkatRJmDEevL5itdrySVe
-        79cjujf5NiNA2BKtLIzUgTXSAbaVYGSoNJC3LCHsjwn7WLmU3EXljdTJ9cCU9Bly
-        NmgppOeZeofHwtd7AT6a7MMszPeL60D2z0XFvioN1ZwGCMx1jxazULMJdq/gXLkJ
-        qNz6XdrpcgyLcYKWR6Eg
+        LmNvbYIJAOD3fdX2G4QqMAoGA1UdFAQDAgEBMA0GCSqGSIb3DQEBBQUAA4IBAQBA
+        kwITEcrepHYCBqBAjWMJa09qhSiXvmjdSArK24j1QdIgFSTpkiC1ouZjG3uITVAr
+        FBoZigwluKd/WrMLaEz/og+ptfW6xQRN2l1fuYN/gMOsBfyplaIcX6hC72y2KpY+
+        zaenvwsLwRZ2abnC97D4hj+asan9rOo+x5q+yv4rknLASkOc0vuAfK+/Ot71pOUy
+        /aEPbXqBlCAJIjT+vtF/+M+4iSniZbDMBs2sdrbisySg8xCAg4+FNb7PmaPLFqxD
+        N7XlnUezrRAzgMjK29zZdAAVlcFLUtGkBTJ/gHE1GaMp7yma8H2jERLu40UAS3yK
+        7HF+St1IH0x1Tl46QLCy
         -----END X509 CRL-----
 
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
+recorded_with: VCR 2.2.4
