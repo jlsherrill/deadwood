@@ -2,21 +2,8 @@ require 'spec_helper'
 require 'timecop'
 require 'vcr'
 require 'ruby-debug'
-
+require 'spec/models/api_spec'
 describe Deadwood::Katello::ActivationKey do
-  before(:each) do
-    Timecop.travel(Time.local(2012, 8, 1, 13, 38, 20))
-    Deadwood::Katello::Base.config = {
-      :katello_user => 'admin',
-      :site => 'https://10.11.230.105:443/katello/api',
-      :consumer_key => 'cloud_forms',
-      :consumer_secret => 'MvhGuh1kLtOAelq5h/ebfcjW'
-    }
-  end
-
-  after(:each) do
-    Timecop.return
-  end
 
   it "should create an activation key and be able to search for it and then destroy them" do
     VCR.use_cassette 'create_activation_key' do

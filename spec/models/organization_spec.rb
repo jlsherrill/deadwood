@@ -2,20 +2,8 @@ require 'spec_helper'
 require 'timecop'
 require 'vcr'
 require 'ruby-debug'
-describe Deadwood::Katello::Organization do
-  before(:each) do
-    Timecop.travel(Time.local(2012, 8, 1, 13, 38, 20))
-    Deadwood::Katello::Base.config = {
-      :katello_user => 'admin',
-      :site => 'https://10.11.230.105:443/katello/api',
-      :consumer_key => 'cloud_forms',
-      :consumer_secret => 'MvhGuh1kLtOAelq5h/ebfcjW'
-    }
-  end
 
-  after(:each) do
-    Timecop.return
-  end
+describe Deadwood::Katello::Organization do
 
   it "should find an org if an org exists" do
     VCR.use_cassette 'organization_exists' do
