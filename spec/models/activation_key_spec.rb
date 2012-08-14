@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'timecop'
 require 'vcr'
 require 'ruby-debug'
-require 'spec/models/api_spec'
+
 describe Deadwood::Katello::ActivationKey do
 
   it "should create an activation key and be able to search for it and then destroy them" do

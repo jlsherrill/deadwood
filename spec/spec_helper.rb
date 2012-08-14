@@ -23,8 +23,6 @@ require 'rspec'
 RSpec.configure do |config|
   config.extend VCR::RSpec::Macros
   config.before(:all) do
-  end
-  config.before(:each) do
     Timecop.travel(Time.local(2012, 8, 1, 13, 38, 20))
     Deadwood::Katello::Base.config = {
       :katello_user => 'admin',
