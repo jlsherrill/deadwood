@@ -7,7 +7,7 @@ http_interactions:
       string: ""
     headers: 
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="jmZfejOblRsRMB0umqCxTVtb6SkuoBd0YADMMCblUU", oauth_signature="T7d9Dyxq0cAS%2F%2FFvsrn%2BIDYySDI%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="uG8yGWzALOBOQA7IG4SWVexG7mS5UzzOFNHCHoo4Qc", oauth_signature="tAV9h3UmJOGQI9OzgDa6ngk%2F%2BF8%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
       User-Agent: 
@@ -30,9 +30,9 @@ http_interactions:
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
       X-Runtime: 
-      - "0.090992"
+      - "0.085720"
       Date: 
-      - Mon, 13 Aug 2012 16:15:02 GMT
+      - Mon, 13 Aug 2012 16:15:01 GMT
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
       Transfer-Encoding: 

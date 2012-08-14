@@ -24,6 +24,13 @@ describe Deadwood::Katello::Organization do
     end
   end
 
+  it "should find ACME_Corporation" do
+    VCR.use_cassette 'find_ACME_Corporation' do
+      org = Deadwood::Katello::Organization.find(:first, :name => 'ACME_Corporation')
+      org.nil?.should be_false
+    end
+  end
+
   it "should find the default organization if default organization exists" do
     VCR.use_cassette 'organization_default_exists' do
       org = Deadwood::Katello::Organization.find(:all).first
