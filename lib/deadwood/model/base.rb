@@ -32,11 +32,14 @@ module Deadwood
         end
 
         def instantiate_collection(collection, prefix_options = {})
-          unless collection.kind_of? Array
-            [instantiate_record(collection, prefix_options)]
-          else
+          if collection.kind_of? Array
             collection.collect! { |record| instantiate_record(record, prefix_options) }
+          elsif collection.kind_of? String
+            collection
+          else
+            [instantiate_record(collection, prefix_options)]
           end
+          rescue ArgumentError
         end
 
         def get(method_name, options = {})
