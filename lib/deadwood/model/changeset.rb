@@ -6,6 +6,7 @@ module Deadwood
         query_options.merge!(self.attributes)
         org_id = self.organization_id
         env_id = self.environment_id
+        # Remove the attributes that aren't allowed to be updated
         attributes.delete(:organization_id)
         attributes.delete(:environment_id)
         "#{self.class.prefix(prefix_options)}organizations/#{org_id}/environments/#{env_id}/#{self.class.collection_name}#{query_string(query_options)}"
