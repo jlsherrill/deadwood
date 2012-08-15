@@ -1,4 +1,5 @@
 --- 
+recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: get
@@ -6,39 +7,38 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="RfJhONhXN8YymS8IKqzmYB6DEkOuaCjYkW3F2osNfM", oauth_signature="cPi2ajDKFeWgqrhRnU7NN5YUMJM%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345051731", oauth_version="1.0"
-      Accept: 
-      - application/json
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="oLhe9BKjyOa0j6kfEfKp8Djr2bM93GhJtAaU3twQ", oauth_signature="Cq8kX5jAYMSqmNrh5m950P8%2B%2B2U%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345056412", oauth_version="1.0"
+      Accept: 
+      - application/json
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Cache-Control: 
       - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"379072b2370f9a967d92e2999ae8d266\""
-      X-Runtime: 
-      - "0.056155"
-      Content-Type: 
-      - application/json; charset=utf-8
-      Date: 
-      - Wed, 15 Aug 2012 17:28:50 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
+      Date: 
+      - Wed, 15 Aug 2012 18:46:52 GMT
       Transfer-Encoding: 
       - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      X-Runtime: 
+      - "0.077877"
+      Etag: 
+      - "\"379072b2370f9a967d92e2999ae8d266\""
     body: 
       string: "[{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-08-09T14:52:28Z\",\"description\":\"Updated description\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}]"
     http_version: 
-  recorded_at: Wed, 15 Aug 2012 17:28:51 GMT
-recorded_with: VCR 2.2.4
+  recorded_at: Wed, 15 Aug 2012 18:46:53 GMT

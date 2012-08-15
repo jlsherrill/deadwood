@@ -1,4 +1,5 @@
 --- 
+recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: get
@@ -6,125 +7,124 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="ZiG6VDNnGL092vrNiseDVt3ZExZ8w11zb8o5u5yEv68", oauth_signature="CGl7iWidgDLi2WR8AXPXyrGvH88%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345051732", oauth_version="1.0"
-      Accept: 
-      - application/json
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="fwYtD6A9gTLCjUUP9LT3aLMXCGag3g96rfTTLPKI", oauth_signature="NSU%2BVlQsNrvLWDK%2FjTMJaV4pLt8%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345056413", oauth_version="1.0"
+      Accept: 
+      - application/json
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Cache-Control: 
       - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"379072b2370f9a967d92e2999ae8d266\""
-      X-Runtime: 
-      - "0.086425"
-      Content-Type: 
-      - application/json; charset=utf-8
-      Date: 
-      - Wed, 15 Aug 2012 17:28:51 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
+      Date: 
+      - Wed, 15 Aug 2012 18:46:52 GMT
       Transfer-Encoding: 
       - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      X-Runtime: 
+      - "0.084996"
+      Etag: 
+      - "\"379072b2370f9a967d92e2999ae8d266\""
     body: 
       string: "[{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-08-09T14:52:28Z\",\"description\":\"Updated description\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}]"
     http_version: 
-  recorded_at: Wed, 15 Aug 2012 17:28:52 GMT
+  recorded_at: Wed, 15 Aug 2012 18:46:53 GMT
 - request: 
     method: put
     uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation
     body: 
       string: "{\"organization\":{\"name\":\"ACME_Corporation\",\"description\":\"Updated description\"}}"
     headers: 
-      Authorization: 
-      - OAuth oauth_body_hash="OBvEpYrXi2TFwKS4OFEW9QsDjZA%3D", oauth_consumer_key="cloud_forms", oauth_nonce="CpZCvCZSgiurdN5Jk0jn6eOGwJinmb11alewdHaVNE", oauth_signature="UHV5MK228uxxgIK7KvLgU9jizfE%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345051732", oauth_version="1.0"
-      Accept: 
-      - "*/*"
       Http-Katello-User: 
       - admin
-      Content-Type: 
-      - application/json
-      Content-Length: 
-      - "80"
       User-Agent: 
       - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_body_hash="OBvEpYrXi2TFwKS4OFEW9QsDjZA%3D", oauth_consumer_key="cloud_forms", oauth_nonce="hSAh7thPoIAAm5D0IcnBrM3YvAqV5rHWJQhnQdrHUGo", oauth_signature="ccixobCWK6XxB16Dx10Whrm3uaE%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345056413", oauth_version="1.0"
+      Content-Length: 
+      - "80"
+      Content-Type: 
+      - application/json
+      Accept: 
+      - "*/*"
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Cache-Control: 
       - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"b326b5062b2f0e69046810717534cb09\""
-      X-Runtime: 
-      - "0.086983"
-      Content-Type: 
-      - application/json; charset=utf-8
-      Date: 
-      - Wed, 15 Aug 2012 17:28:51 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
+      Date: 
+      - Wed, 15 Aug 2012 18:46:52 GMT
       Transfer-Encoding: 
       - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      X-Runtime: 
+      - "0.072937"
+      Etag: 
+      - "\"b326b5062b2f0e69046810717534cb09\""
     body: 
       string: "true"
     http_version: 
-  recorded_at: Wed, 15 Aug 2012 17:28:52 GMT
+  recorded_at: Wed, 15 Aug 2012 18:46:53 GMT
 - request: 
     method: get
     uri: https://10.11.230.105/katello/api/organizations
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="WjlJmVuOhwTw06LVPX00jCvCY8yiAG7DAE1EU2M", oauth_signature="bK0kZTDjAbEU3yAdM9qGVdmOLfs%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345051732", oauth_version="1.0"
-      Accept: 
-      - application/json
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="FbL06f055AufmkFgIytXxT7bZEvhBkonN9TwFOs2A", oauth_signature="8on65XNtz8EiwdtZydweT%2FREZ10%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345056413", oauth_version="1.0"
+      Accept: 
+      - application/json
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Cache-Control: 
       - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"379072b2370f9a967d92e2999ae8d266\""
-      X-Runtime: 
-      - "0.064482"
-      Content-Type: 
-      - application/json; charset=utf-8
-      Date: 
-      - Wed, 15 Aug 2012 17:28:51 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
+      Date: 
+      - Wed, 15 Aug 2012 18:46:52 GMT
       Transfer-Encoding: 
       - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      X-Runtime: 
+      - "0.072069"
+      Etag: 
+      - "\"379072b2370f9a967d92e2999ae8d266\""
     body: 
       string: "[{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-08-09T14:52:28Z\",\"description\":\"Updated description\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}]"
     http_version: 
-  recorded_at: Wed, 15 Aug 2012 17:28:52 GMT
-recorded_with: VCR 2.2.4
+  recorded_at: Wed, 15 Aug 2012 18:46:53 GMT
