@@ -7,38 +7,38 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      Http-Katello-User: 
-      - admin
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="oLhe9BKjyOa0j6kfEfKp8Djr2bM93GhJtAaU3twQ", oauth_signature="Cq8kX5jAYMSqmNrh5m950P8%2B%2B2U%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345056412", oauth_version="1.0"
       Accept: 
       - application/json
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="XPf2b3K9HqSTaNNq0JCTRsbtBj7WVqXsNni8uiOrncE", oauth_signature="wpmURPppcZn%2F%2FdJzB%2BOZCEkoihk%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345128413", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
+      Date: 
+      - Thu, 16 Aug 2012 14:46:52 GMT
       Cache-Control: 
       - max-age=0, private, must-revalidate
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Date: 
-      - Wed, 15 Aug 2012 18:46:52 GMT
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      X-Runtime: 
-      - "0.077877"
       Etag: 
       - "\"379072b2370f9a967d92e2999ae8d266\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      Content-Type: 
+      - application/json; charset=utf-8
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      X-Runtime: 
+      - "0.062567"
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Transfer-Encoding: 
+      - chunked
     body: 
       string: "[{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-08-09T14:52:28Z\",\"description\":\"Updated description\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}]"
     http_version: 
-  recorded_at: Wed, 15 Aug 2012 18:46:53 GMT
+  recorded_at: Thu, 16 Aug 2012 14:46:53 GMT

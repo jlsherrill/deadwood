@@ -4,7 +4,7 @@ require 'vcr'
 require 'ruby-debug'
 
 describe Deadwood::Katello::Organization do
-
+  let(:org_id) { "ACME_Corporation" }
   it "should find an org if an org exists" do
     VCR.use_cassette 'organization_exists' do
       orgs = Deadwood::Katello::Organization.find(:all)
@@ -14,7 +14,7 @@ describe Deadwood::Katello::Organization do
 
   it "should find ACME_Corporation" do
     VCR.use_cassette 'find_ACME_Corporation' do
-      org = Deadwood::Katello::Organization.find(:first, :name => 'ACME_Corporation')
+      org = Deadwood::Katello::Organization.find(:first, :name => org_id)
       org.nil?.should be_false
     end
   end

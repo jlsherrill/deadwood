@@ -1,0 +1,44 @@
+--- 
+recorded_with: VCR 2.2.4
+http_interactions: 
+- request: 
+    method: get
+    uri: https://10.11.230.105/katello/api/users
+    body: 
+      string: ""
+    headers: 
+      Accept: 
+      - application/json
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="8BvtfPWGFTr11ITjqlCcShW8eqjPXYAh9H9Q56M", oauth_signature="NKUZS5hUfCQ%2B3jb6ubwE78gjJ1M%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Http-Katello-User: 
+      - admin
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Thu, 16 Aug 2012 14:46:54 GMT
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"740232fc5d472b6fdbf5cadd2b4e5dc4\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      Content-Type: 
+      - application/json; charset=utf-8
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      X-Runtime: 
+      - "0.054692"
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Transfer-Encoding: 
+      - chunked
+    body: 
+      string: "[{\"password_reset_token\":null,\"password_reset_sent_at\":null,\"default_organization\":null,\"helptips_enabled\":true,\"disabled\":false,\"id\":1,\"default_environment\":null,\"own_role_id\":3,\"preferences\":{},\"updated_at\":\"2012-07-02T18:47:38Z\",\"password\":\"748d6e91bc794a3989e9d9820cbf6317fdc727e4129d13a61d3df6ece9194d453338d02c28505daee277d49566ad4827f2910ac2c1c12e1ab0b5788ccf101030T3h7mXXXPsvJtD7sDkF7kAihIKXuTHyTL81EUWcOCYbxk7kFcomuv7w3xel5y7Gq\",\"username\":\"admin\",\"created_at\":\"2012-07-02T18:47:38Z\",\"email\":\"root@localhost\",\"hidden\":false,\"page_size\":25}]"
+    http_version: 
+  recorded_at: Wed, 01 Aug 2012 17:38:20 GMT

@@ -4,7 +4,7 @@ require 'vcr'
 require 'ruby-debug'
 
 describe Deadwood::Katello::Organization do
-
+  let(:org_id) { "ACME_Corporation" }
   it "should find a provider if a provider exists" do
     VCR.use_cassette 'provider_1_exists' do
       provider = Deadwood::Katello::Provider.find(1)
@@ -14,7 +14,7 @@ describe Deadwood::Katello::Organization do
 
   it "should find all providers if all providers exist" do
     VCR.use_cassette 'providers_all_exists' do
-      providers = Deadwood::Katello::Provider.find(:all, :from=> "/katello/api/organizations/ACME_Corporation/providers")
+      providers = Deadwood::Katello::Provider.find(:all, :from=> "/katello/api/organizations/#{org_id}/providers")
       providers.nil?.should be_false
     end
 
@@ -50,10 +50,10 @@ describe Deadwood::Katello::Organization do
 
   it "should create a provider" do
     VCR.use_cassette 'create_provider_for_default_org' do
-      size = Deadwood::Katello::Provider.find(:all, :from=> "/katello/api/organizations/ACME_Corporation/providers").size
+      size = Deadwood::Katello::Provider.find(:all, :from=> "/katello/api/organizations/#{org_id}/providers").size
       provider = Deadwood::Katello::Provider.new(:organization_id => 'ACME_Corporation', :provider_type => 'Custom', :repository_url => 'http://repo.example.com', :name => 'test_provider_name', :description => 'Test provider description')
       provider.save
-      new_size = Deadwood::Katello::Provider.find(:all, :from=> "/katello/api/organizations/ACME_Corporation/providers").size
+      new_size = Deadwood::Katello::Provider.find(:all, :from=> "/katello/api/organizations/#{org_id}/providers").size
       (new_size == size + 1).should be_true
       provider.destroy
     end

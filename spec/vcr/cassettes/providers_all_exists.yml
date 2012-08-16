@@ -7,38 +7,38 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      Http-Katello-User: 
-      - admin
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="gpOQvrCr9vWJzH03N0G3UJudW868fmiHPF8rsp0e4", oauth_signature="QoGL8wfby6Xhva9dHGDhop8Fg%2Bg%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345056419", oauth_version="1.0"
       Accept: 
       - application/json
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="kIBbxeng7kMOqAWTWWW3W1zEgwcrjdfFI5PGjSADR0I", oauth_signature="%2BOVWWlau%2B9cgNIGjpEpX17Hw8J8%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345128419", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
+      Date: 
+      - Thu, 16 Aug 2012 14:46:58 GMT
       Cache-Control: 
       - max-age=0, private, must-revalidate
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
+      Etag: 
+      - "\"213f374449b7bea015f74d7048eb29d3\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      Date: 
-      - Wed, 15 Aug 2012 18:46:58 GMT
-      Transfer-Encoding: 
-      - chunked
       Content-Type: 
       - application/json; charset=utf-8
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
       X-Runtime: 
-      - "0.027352"
-      Etag: 
-      - "\"af8260afcd0ab6106e373046959ee379\""
+      - "0.028723"
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Transfer-Encoding: 
+      - chunked
     body: 
-      string: "[{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-15T17:29:01Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.com\"}]"
+      string: "[{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-15T18:46:58Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.com\"}]"
     http_version: 
-  recorded_at: Wed, 15 Aug 2012 18:46:59 GMT
+  recorded_at: Thu, 16 Aug 2012 14:46:59 GMT

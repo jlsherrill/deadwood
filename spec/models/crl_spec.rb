@@ -4,7 +4,6 @@ require 'vcr'
 require 'ruby-debug'
 
 describe Deadwood::Katello::Crl do
-
   it "should retrieve the crl" do
     VCR.use_cassette 'find_crl' do
       crl = Deadwood::Katello::Crl.find(:all)

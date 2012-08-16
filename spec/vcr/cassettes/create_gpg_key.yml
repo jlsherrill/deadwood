@@ -5,169 +5,169 @@ http_interactions:
     method: post
     uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/gpg_keys?content=-----BEGIN%20PGP%20PUBLIC%20KEY%20BLOCK-----%0AVersion:%20GnuPG%20v1.4.11%20(GNU/Linux)%0A%0AmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q%0AlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI%0Ai0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE%0AVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ%0AiV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b%0AqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz%0AIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b%0AoQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW%0Af0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/%0AkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt%0A3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b%0A9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8%0AVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi%0ASCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq%0AsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5%0Au2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH%0A4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX%0AlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj%0AP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf%0ABBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H%0AKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W%0Axn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ%0A9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm%0AbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c%0AOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=%0A=RrIG%0A-----END%20PGP%20PUBLIC%20KEY%20BLOCK-----%0A&name=Test-GPG-Key&organization_id=ACME_Corporation
     body: 
-      string: "{\"gpg_key\":{\"content\":\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\nVersion: GnuPG v1.4.11 (GNU/Linux)\\n\\nmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q\\nlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI\\ni0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE\\nVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ\\niV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b\\nqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz\\nIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b\\noQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW\\nf0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/\\nkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt\\n3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b\\n9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8\\nVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi\\nSCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq\\nsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5\\nu2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH\\n4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX\\nlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj\\nP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf\\nBBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H\\nKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W\\nxn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ\\n9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm\\nbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c\\nOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=\\n=RrIG\\n-----END PGP PUBLIC KEY BLOCK-----\\n\",\"name\":\"Test-GPG-Key\"}}"
+      string: "{\"gpg_key\":{\"name\":\"Test-GPG-Key\",\"content\":\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\nVersion: GnuPG v1.4.11 (GNU/Linux)\\n\\nmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q\\nlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI\\ni0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE\\nVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ\\niV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b\\nqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz\\nIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b\\noQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW\\nf0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/\\nkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt\\n3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b\\n9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8\\nVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi\\nSCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq\\nsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5\\nu2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH\\n4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX\\nlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj\\nP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf\\nBBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H\\nKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W\\nxn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ\\n9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm\\nbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c\\nOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=\\n=RrIG\\n-----END PGP PUBLIC KEY BLOCK-----\\n\"}}"
     headers: 
-      Http-Katello-User: 
-      - admin
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Authorization: 
-      - OAuth oauth_body_hash="DCnK5yoHUcemw97OlpnqVKjRHbE%3D", oauth_consumer_key="cloud_forms", oauth_nonce="XYVxToWXZKcbSTRgwoTqfoTBKarNfFrHo15p41EH2o", oauth_signature="O9Er1uoUX2CFvBl7PCvdpHrETps%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Content-Length: 
       - "1817"
-      Content-Type: 
-      - application/json
       Accept: 
       - "*/*"
+      Authorization: 
+      - OAuth oauth_body_hash="sUzRHgseNG6eBHlrJHZjGAzI68Y%3D", oauth_consumer_key="cloud_forms", oauth_nonce="aBSwyCHCc6Gsz4B9YfBBPJHPUgeQ5Ft5SqYNVvoHc", oauth_signature="fdjqShY3CXAKWxRneW6U%2Ft6hdQU%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Content-Type: 
+      - application/json
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
+      Date: 
+      - Thu, 16 Aug 2012 14:46:54 GMT
       Cache-Control: 
       - max-age=0, private, must-revalidate
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
+      Etag: 
+      - "\"870e0245240fcefaab866528d5cbd01f\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      Date: 
-      - Wed, 15 Aug 2012 18:46:54 GMT
-      Transfer-Encoding: 
-      - chunked
       Content-Type: 
       - application/json; charset=utf-8
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
       X-Runtime: 
-      - "0.046431"
-      Etag: 
-      - "\"92c65e19c18f5fdb824084c4c0793655\""
+      - "0.046999"
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Transfer-Encoding: 
+      - chunked
     body: 
-      string: "{\"id\":5,\"organization_id\":1,\"updated_at\":\"2012-08-15T18:46:54Z\",\"name\":\"Test-GPG-Key\",\"created_at\":\"2012-08-15T18:46:54Z\",\"content\":\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\nVersion: GnuPG v1.4.11 (GNU/Linux)\\n\\nmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q\\nlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI\\ni0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE\\nVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ\\niV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b\\nqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz\\nIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b\\noQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW\\nf0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/\\nkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt\\n3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b\\n9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8\\nVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi\\nSCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq\\nsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5\\nu2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH\\n4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX\\nlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj\\nP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf\\nBBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H\\nKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W\\nxn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ\\n9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm\\nbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c\\nOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=\\n=RrIG\\n-----END PGP PUBLIC KEY BLOCK-----\\n\"}"
+      string: "{\"id\":6,\"organization_id\":1,\"updated_at\":\"2012-08-16T14:46:54Z\",\"name\":\"Test-GPG-Key\",\"created_at\":\"2012-08-16T14:46:54Z\",\"content\":\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\nVersion: GnuPG v1.4.11 (GNU/Linux)\\n\\nmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q\\nlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI\\ni0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE\\nVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ\\niV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b\\nqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz\\nIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b\\noQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW\\nf0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/\\nkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt\\n3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b\\n9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8\\nVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi\\nSCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq\\nsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5\\nu2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH\\n4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX\\nlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj\\nP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf\\nBBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H\\nKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W\\nxn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ\\n9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm\\nbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c\\nOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=\\n=RrIG\\n-----END PGP PUBLIC KEY BLOCK-----\\n\"}"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
     method: get
-    uri: https://10.11.230.105/katello/api/gpg_keys/5
+    uri: https://10.11.230.105/katello/api/gpg_keys/6
     body: 
       string: ""
     headers: 
-      Http-Katello-User: 
-      - admin
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="pnDfIhy1AvQOKlotyQ2zJFKCY03SMZpkiz4nuNJ2U8", oauth_signature="pHP4fsTssKnHvhit0t836YEPkDk%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="2f7q1h3eyHsS0YI8kg0IJKx6TETPrdp5tm34zBvZVjw", oauth_signature="lXBzOAKTdNiAtjhFOuvFneDaFpc%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
+      Date: 
+      - Thu, 16 Aug 2012 14:46:54 GMT
       Cache-Control: 
       - max-age=0, private, must-revalidate
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
+      Etag: 
+      - "\"874fa253f79422eda43807e2da3f4314\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      Date: 
-      - Wed, 15 Aug 2012 18:46:54 GMT
-      Transfer-Encoding: 
-      - chunked
       Content-Type: 
       - application/json; charset=utf-8
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
       X-Runtime: 
-      - "0.021575"
-      Etag: 
-      - "\"449e5312918395128655ff469fb1e273\""
+      - "0.024243"
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Transfer-Encoding: 
+      - chunked
     body: 
-      string: "{\"repositories\":[],\"products\":[],\"id\":5,\"organization_id\":1,\"updated_at\":\"2012-08-15T18:46:54Z\",\"name\":\"Test-GPG-Key\",\"created_at\":\"2012-08-15T18:46:54Z\",\"content\":\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\nVersion: GnuPG v1.4.11 (GNU/Linux)\\n\\nmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q\\nlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI\\ni0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE\\nVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ\\niV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b\\nqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz\\nIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b\\noQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW\\nf0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/\\nkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt\\n3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b\\n9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8\\nVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi\\nSCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq\\nsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5\\nu2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH\\n4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX\\nlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj\\nP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf\\nBBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H\\nKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W\\nxn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ\\n9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm\\nbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c\\nOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=\\n=RrIG\\n-----END PGP PUBLIC KEY BLOCK-----\\n\"}"
+      string: "{\"repositories\":[],\"products\":[],\"id\":6,\"organization_id\":1,\"updated_at\":\"2012-08-16T14:46:54Z\",\"name\":\"Test-GPG-Key\",\"created_at\":\"2012-08-16T14:46:54Z\",\"content\":\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\nVersion: GnuPG v1.4.11 (GNU/Linux)\\n\\nmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q\\nlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI\\ni0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE\\nVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ\\niV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b\\nqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz\\nIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b\\noQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW\\nf0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/\\nkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt\\n3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b\\n9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8\\nVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi\\nSCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq\\nsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5\\nu2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH\\n4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX\\nlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj\\nP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf\\nBBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H\\nKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W\\nxn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ\\n9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm\\nbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c\\nOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=\\n=RrIG\\n-----END PGP PUBLIC KEY BLOCK-----\\n\"}"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
     method: put
-    uri: https://10.11.230.105/katello/api/gpg_keys/5
+    uri: https://10.11.230.105/katello/api/gpg_keys/6
     body: 
-      string: "{\"gpg_key\":{\"content\":\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\nVersion: GnuPG v1.4.11 (GNU/Linux)\\n\\nmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q\\nlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI\\ni0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE\\nVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ\\niV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b\\nqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz\\nIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b\\noQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW\\nf0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/\\nkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt\\n3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b\\n9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8\\nVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi\\nSCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq\\nsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5\\nu2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH\\n4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX\\nlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj\\nP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf\\nBBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H\\nKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W\\nxn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ\\n9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm\\nbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c\\nOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=\\n=RrIG\\n-----END PGP PUBLIC KEY BLOCK-----\\n\",\"name\":\"Renamed-Test-GPG-Key\"}}"
+      string: "{\"gpg_key\":{\"name\":\"Renamed-Test-GPG-Key\",\"content\":\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\nVersion: GnuPG v1.4.11 (GNU/Linux)\\n\\nmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q\\nlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI\\ni0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE\\nVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ\\niV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b\\nqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz\\nIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b\\noQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW\\nf0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/\\nkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt\\n3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b\\n9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8\\nVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi\\nSCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq\\nsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5\\nu2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH\\n4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX\\nlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj\\nP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf\\nBBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H\\nKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W\\nxn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ\\n9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm\\nbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c\\nOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=\\n=RrIG\\n-----END PGP PUBLIC KEY BLOCK-----\\n\"}}"
     headers: 
-      Http-Katello-User: 
-      - admin
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Authorization: 
-      - OAuth oauth_body_hash="S2e8m77yYZDDUtcmb5JqO8NBy4w%3D", oauth_consumer_key="cloud_forms", oauth_nonce="eYnhT6F0wlOB6xYdDLvQk9qF0EwLElz2GNYDl1I48", oauth_signature="Bdc5fLisJM32IZLJvwf%2FHRuy%2FIU%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842701", oauth_version="1.0"
       Content-Length: 
       - "1825"
-      Content-Type: 
-      - application/json
       Accept: 
       - "*/*"
+      Authorization: 
+      - OAuth oauth_body_hash="gmLxWHFK9Yr%2F2O34BkI5wRv6voQ%3D", oauth_consumer_key="cloud_forms", oauth_nonce="5WsdCSej2jcvCNFcE0CXmmeI3SwRS3zzSecdWwdA", oauth_signature="3T7CMUmNzSqA7rU38lki1k1pPF0%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Content-Type: 
+      - application/json
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
+      Date: 
+      - Thu, 16 Aug 2012 14:46:54 GMT
       Cache-Control: 
       - max-age=0, private, must-revalidate
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
+      Etag: 
+      - "\"04606262c6c1c45a8974a9d697d1ad20\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      Date: 
-      - Wed, 15 Aug 2012 18:46:55 GMT
-      Transfer-Encoding: 
-      - chunked
       Content-Type: 
       - application/json; charset=utf-8
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
       X-Runtime: 
-      - "0.078689"
-      Etag: 
-      - "\"061cc75835c2341608674783eeda5701\""
+      - "0.032631"
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Transfer-Encoding: 
+      - chunked
     body: 
-      string: "{\"id\":5,\"organization_id\":1,\"updated_at\":\"2012-08-15T18:46:55Z\",\"name\":\"Renamed-Test-GPG-Key\",\"created_at\":\"2012-08-15T18:46:54Z\",\"content\":\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\nVersion: GnuPG v1.4.11 (GNU/Linux)\\n\\nmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q\\nlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI\\ni0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE\\nVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ\\niV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b\\nqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz\\nIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b\\noQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW\\nf0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/\\nkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt\\n3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b\\n9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8\\nVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi\\nSCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq\\nsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5\\nu2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH\\n4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX\\nlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj\\nP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf\\nBBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H\\nKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W\\nxn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ\\n9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm\\nbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c\\nOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=\\n=RrIG\\n-----END PGP PUBLIC KEY BLOCK-----\\n\"}"
+      string: "{\"id\":6,\"organization_id\":1,\"updated_at\":\"2012-08-16T14:46:54Z\",\"name\":\"Renamed-Test-GPG-Key\",\"created_at\":\"2012-08-16T14:46:54Z\",\"content\":\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\nVersion: GnuPG v1.4.11 (GNU/Linux)\\n\\nmQENBE8NW6EBCAC/ht3UujFwxol44zilXcwI8v15gf6X4u3A5Oo2FCEweQfbZw8q\\nlPGjzRNHcNVO4NIZ+G1fHyWAgcs/xa4fTju4LOJU2OWfbkvGA7tlIIREkEQ9IgMI\\ni0LJzsHyqhWhJ0S5POCLFyH27R0Vh2wPMwZawoomRVDsghIE8TAJVKIHICVObvGE\\nVqBGSY1OHvGfZ0ZsnQv3hDmxnyywJkJ96HGVqStS2sW0YkQ77dRY0u6eSI55vwBQ\\niV9dCSMs43LpoBL9pFj0ESM76G0GSGF5G9PH2b//y8ehepdS30otiqgjag5Zw76b\\nqFMHFyq1o5hXJpIPiZaagU1X+wMixPOlqE5LABEBAAG0MER1bW15IFBhY2thZ2Vz\\nIEdlbmVyYXRvciA8YWRtaW5Aem9vLmV4YW1wbGUuY29tPokBOAQTAQIAIgUCTw1b\\noQIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ74XM4/ePsZVeCgf+L+HW\\nf0K7/uzu3Q7G+aOu7qwu0iUK64SEAgtoMdjpjkq+YYxPS60zP7QS3pAzL4N31kT/\\nkHQ+OJAg5Z0oegXu9mdhIenks2DaEzN6P2jAhWoRa/az5F9AaJ01WSsspsBpcAyt\\n3NB2iGNtzs4v6saUz5mTp1bgmsXolzClHlTSUnjjCfuk7HgzJcCpRxb49tQ5Lo3b\\n9k0XPvhhgSdiTFM+CfPl3qgHPENZqyoDOnhvKbMHZg8NCf1NLf8edlk5nWDjHti8\\nVfkuCSgRzR15SgyEUU1MCQBPEYKy8U6LoOwX8Rl3+lCf9D7rReP74wSEdr9p9cFi\\nSCFpN6IUJ9pN0tDU3rkBDQRPDVuhAQgAmZB+DKbraTgeW1UOYS/HWzGOR21NR3nq\\nsxeG249W3OlsZbk/8BJP/DqFAhVbdxvISFkSKURoVXxUwoKx36KZHXIOgCt3vsj5\\nu2mxF2ajrHBwzM8jrrNy8xdd4DplOP2D0DbuswDi5pqmd/Cd0EdC88ZIPt3Ox/GH\\n4uCJOzkCRFcFRZhOT+YC+A3YaVg4UoR3AMup8K81Nm2y8q1pUy/gZvkWMONy5iDX\\nlyU6enBNv+vmhumyYJT8+rPRW/ztsaBzkvpuXkQTJdWDQbigeK1hBNV5PCjyQydj\\nP+sKrMxKjyyZ0rcGP1hcCqZuBHZlW0O2WJFKsZv+fY8UJfU08FeAqQARAQABiQEf\\nBBgBAgAJBQJPDVuhAhsMAAoJEO+FzOP3j7GVhlsH/0emlW/Nk0bSUG4jfAeJAB7H\\nKRYbr5P/YbbFLEOb4yi2DlPxUac0JoXCMLha9G9LBmQ4IL4qPHdycSlEs4cGBX6W\\nxn1ti6rJ3LWm5Hb7iUBfIeuKW31thTJK7SAruiBk7g1/I55HlFW0LEfgfVUQf6hJ\\n9Rnw6YVXyQAod1x/QmLWw5aQcoksHL/4eRpU74EjuKQdZMLuaherKtY6OTtEDTdm\\nbEdEINVqR5hYEHgDEPPrPb5MDbQsrMEAwdWPqC2/9cgacO33/VuvXDu74X+TwE/c\\nOGRCb385XPNS9KApQ4iRTZ6ccOnSJumZbeTTd9DBFwa+T1/xD96yabnaOdJqf6Y=\\n=RrIG\\n-----END PGP PUBLIC KEY BLOCK-----\\n\"}"
     http_version: 
-  recorded_at: Wed, 01 Aug 2012 17:38:21 GMT
+  recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
     method: delete
-    uri: https://10.11.230.105/katello/api/gpg_keys/5
+    uri: https://10.11.230.105/katello/api/gpg_keys/6
     body: 
       string: ""
     headers: 
-      Http-Katello-User: 
-      - admin
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="0ayXSZjzCN6ZeP2WV9ezbo4pqYtOLgTNjuOqw3bnng", oauth_signature="nn7GRjYZe51E5zGC6gvtsJRpFRo%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842702", oauth_version="1.0"
       Accept: 
       - application/json
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="s0Z5zVRaVIAmlCmMXH6uja1g9UsNVwC38P9kmk2XDo", oauth_signature="IqW%2FQOcY4Ei8VT%2ButlU39GvYnhU%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 204
       message: No Content
     headers: 
-      Cache-Control: 
-      - no-cache
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Date: 
-      - Wed, 15 Aug 2012 18:46:56 GMT
       Content-Length: 
       - "0"
+      Date: 
+      - Thu, 16 Aug 2012 14:46:54 GMT
+      Cache-Control: 
+      - no-cache
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
       Content-Type: 
       - text/plain; charset=UTF-8
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
       X-Runtime: 
-      - "0.030988"
+      - "0.033563"
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
     body: 
       string: ""
     http_version: 
-  recorded_at: Wed, 01 Aug 2012 17:38:22 GMT
+  recorded_at: Wed, 01 Aug 2012 17:38:20 GMT

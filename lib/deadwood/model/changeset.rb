@@ -11,7 +11,6 @@ module Deadwood
         attributes.delete(:environment_id)
         "#{self.class.prefix(prefix_options)}organizations/#{org_id}/environments/#{env_id}/#{self.class.collection_name}#{query_string(query_options)}"
       end
-
     end
   end
 end
