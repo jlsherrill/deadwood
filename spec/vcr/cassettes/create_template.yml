@@ -2,105 +2,15 @@
 recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
-    method: post
-    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments?name=Test&organization_id=ACME_Corporation&prior=1
-    body: 
-      string: "{\"environment\":{\"name\":\"Test\",\"prior\":1}}"
-    headers: 
-      Http-Katello-User: 
-      - admin
-      Content-Type: 
-      - application/json
-      Content-Length: 
-      - "41"
-      Authorization: 
-      - OAuth oauth_body_hash="lCe2lMYXISkHQNPzaGPJ0yiK97Y%3D", oauth_consumer_key="cloud_forms", oauth_nonce="jEIoyQKrVJ3ucN0FDadLuVMJOufIAymydsAorgn2bM", oauth_signature="hsncD7gpR6luk9bROcSiAUMvjdE%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
-      Accept: 
-      - "*/*"
-      User-Agent: 
-      - OAuth gem v0.4.6
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Etag: 
-      - "\"dc588ed0a5132856fd7e3ce308ce8623\""
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
-      Date: 
-      - Mon, 20 Aug 2012 14:19:39 GMT
-      X-Runtime: 
-      - "0.384848"
-    body: 
-      string: "{\"library\":false,\"prior\":\"Library\",\"id\":129,\"organization\":\"ACME_Corporation\",\"organization_id\":1,\"updated_at\":\"2012-08-20T14:19:39Z\",\"name\":\"Test\",\"description\":null,\"prior_id\":1,\"created_at\":\"2012-08-20T14:19:39Z\"}"
-    http_version: 
-  recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
-- request: 
-    method: post
-    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/129/changesets?description=test_description&environment_id=129&name=test_changeset&organization_id=ACME_Corporation
-    body: 
-      string: "{\"changeset\":{\"name\":\"test_changeset\",\"description\":\"test_description\"}}"
-    headers: 
-      Http-Katello-User: 
-      - admin
-      Content-Type: 
-      - application/json
-      Content-Length: 
-      - "72"
-      Authorization: 
-      - OAuth oauth_body_hash="LEVvXycZ0rtQYDAoBTmJFXs1JXE%3D", oauth_consumer_key="cloud_forms", oauth_nonce="Er41CSgDWpY2tDSBNVLGPTGrZ9b2yGFJocDZaEhEogM", oauth_signature="8BhK42gqGgMNw5ofpYTuMOqkCoE%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
-      Accept: 
-      - "*/*"
-      User-Agent: 
-      - OAuth gem v0.4.6
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Etag: 
-      - "\"050075ef70fb7a5b26aee5b444800fa9\""
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
-      Date: 
-      - Mon, 20 Aug 2012 14:19:40 GMT
-      X-Runtime: 
-      - "0.047001"
-    body: 
-      string: "{\"task_status_id\":null,\"id\":16,\"promotion_date\":null,\"updated_at\":\"2012-08-20T14:19:40Z\",\"name\":\"test_changeset\",\"description\":\"test_description\",\"state\":\"new\",\"environment_id\":129,\"created_at\":\"2012-08-20T14:19:40Z\"}"
-    http_version: 
-  recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
-- request: 
     method: get
-    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/129/changesets
+    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments
     body: 
       string: ""
     headers: 
       Http-Katello-User: 
       - admin
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="KqXLWvbaW8IQLB3JpyhhENmeNAZH7YvRGCebDzLMM", oauth_signature="%2Bm6rD%2BN7IfQCdk6MIdPjch8m8Mk%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="H6fd7l8Xhdwl0eLo3FXIo4wHFnwUs6nrkZ9IRlFd3Zo", oauth_signature="CPtMpwxHRg%2BBBjyxy5wD5cvbnkg%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
       User-Agent: 
@@ -111,7 +21,7 @@ http_interactions:
       message: OK
     headers: 
       Etag: 
-      - "\"4968b58f6b7f14d41412bfcf597bc04f\""
+      - "\"47a8ccc71417629ef034ca7f1eabbb05\""
       Transfer-Encoding: 
       - chunked
       Content-Type: 
@@ -125,23 +35,150 @@ http_interactions:
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
       Date: 
-      - Mon, 20 Aug 2012 14:19:40 GMT
+      - Mon, 20 Aug 2012 14:19:51 GMT
       X-Runtime: 
-      - "0.031490"
+      - "0.020892"
     body: 
-      string: "[{\"task_status_id\":null,\"id\":16,\"promotion_date\":null,\"updated_at\":\"2012-08-20T14:19:40Z\",\"name\":\"test_changeset\",\"description\":\"test_description\",\"state\":\"new\",\"environment_name\":\"Test\",\"environment_id\":129,\"created_at\":\"2012-08-20T14:19:40Z\"}]"
+      string: "[{\"library\":true,\"prior\":null,\"id\":1,\"organization\":\"ACME_Corporation\",\"organization_id\":1,\"updated_at\":\"2012-07-02T18:47:39Z\",\"name\":\"Library\",\"description\":null,\"prior_id\":null,\"created_at\":\"2012-07-02T18:47:39Z\"}]"
+    http_version: 
+  recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
+- request: 
+    method: post
+    uri: https://10.11.230.105/katello/api/templates?description=test%20description&environment_id=1&name=test_template_name
+    body: 
+      string: "{\"template\":{\"name\":\"test_template_name\",\"description\":\"test description\"}}"
+    headers: 
+      Http-Katello-User: 
+      - admin
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "75"
+      Authorization: 
+      - OAuth oauth_body_hash="3x%2FTJXuYytkwsvmQTmeJs%2FgSg7o%3D", oauth_consumer_key="cloud_forms", oauth_nonce="9hE0ouNQHCtnYSTOu8Yo7OBSp5DwN6Esby53arKWQU", oauth_signature="IIOmldjh0CauLuVdPksZ45O5Yu4%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - OAuth gem v0.4.6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Etag: 
+      - "\"c046749b0676f86517cc3ba6cfca99c9\""
+      Transfer-Encoding: 
+      - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Date: 
+      - Mon, 20 Aug 2012 14:19:51 GMT
+      X-Runtime: 
+      - "0.054435"
+    body: 
+      string: "{\"repositories\":[],\"products\":[],\"revision\":1,\"parameters_json\":\"{}\",\"package_groups\":[],\"id\":8,\"updated_at\":\"2012-08-20T14:19:51Z\",\"pg_categories\":[],\"name\":\"test_template_name\",\"description\":\"test description\",\"packages\":[],\"environment_id\":1,\"parameters\":{},\"parent_id\":null,\"created_at\":\"2012-08-20T14:19:51Z\"}"
+    http_version: 
+  recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
+- request: 
+    method: get
+    uri: https://10.11.230.105/katello/api/templates/8
+    body: 
+      string: ""
+    headers: 
+      Http-Katello-User: 
+      - admin
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="11SxBsbapkdsmUlmszUr8StEi7lKULVLinJZ7ivXNE", oauth_signature="nVIL2xLQv1F6uo%2BgUBQmX9tTTkQ%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      Accept: 
+      - application/json
+      User-Agent: 
+      - OAuth gem v0.4.6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Etag: 
+      - "\"c046749b0676f86517cc3ba6cfca99c9\""
+      Transfer-Encoding: 
+      - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Date: 
+      - Mon, 20 Aug 2012 14:19:51 GMT
+      X-Runtime: 
+      - "0.149420"
+    body: 
+      string: "{\"repositories\":[],\"products\":[],\"revision\":1,\"parameters_json\":\"{}\",\"package_groups\":[],\"id\":8,\"updated_at\":\"2012-08-20T14:19:51Z\",\"pg_categories\":[],\"name\":\"test_template_name\",\"description\":\"test description\",\"packages\":[],\"environment_id\":1,\"parameters\":{},\"parent_id\":null,\"created_at\":\"2012-08-20T14:19:51Z\"}"
+    http_version: 
+  recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
+- request: 
+    method: get
+    uri: https://10.11.230.105/katello/api/environments/1/templates
+    body: 
+      string: ""
+    headers: 
+      Http-Katello-User: 
+      - admin
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="363SvV1w4oxFp5dX1Nfu4z0qEY2eRJrXbUNmJ0HrQ", oauth_signature="6CDblphEIBdgeB8X05Qzu8Gj4ZY%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      Accept: 
+      - application/json
+      User-Agent: 
+      - OAuth gem v0.4.6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Etag: 
+      - "\"6e68e3264b2b21804abc97646148702d\""
+      Transfer-Encoding: 
+      - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Date: 
+      - Mon, 20 Aug 2012 14:19:51 GMT
+      X-Runtime: 
+      - "0.027775"
+    body: 
+      string: "[{\"revision\":1,\"parameters_json\":\"{}\",\"id\":8,\"updated_at\":\"2012-08-20T14:19:51Z\",\"name\":\"test_template_name\",\"description\":\"test description\",\"environment_id\":1,\"parent_id\":null,\"created_at\":\"2012-08-20T14:19:51Z\"}]"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
     method: delete
-    uri: https://10.11.230.105/katello/api/changesets/16
+    uri: https://10.11.230.105/katello/api/templates/8
     body: 
       string: ""
     headers: 
       Http-Katello-User: 
       - admin
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="1kixgtt7fIgiRbNkQg7Yqkh2uSfojDToPEUfYrgN4g", oauth_signature="6Ys75y6QO50pMUjuUsKVunnJA%2BE%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="nmCwJdvnkSdCHvQxbQrsheiD56AzQKMRqiHGbR0h6TM", oauth_signature="FrmyajQFvNutBShx%2BoSumAy2zGs%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
       User-Agent: 
@@ -152,7 +189,7 @@ http_interactions:
       message: OK
     headers: 
       Etag: 
-      - "\"d30784d0b00594c134ab8db4ba48d522\""
+      - "\"9c49bb0262c5bd288a161bd8f8eb2cca\""
       Transfer-Encoding: 
       - chunked
       Content-Type: 
@@ -166,23 +203,23 @@ http_interactions:
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
       Date: 
-      - Mon, 20 Aug 2012 14:19:40 GMT
+      - Mon, 20 Aug 2012 14:19:51 GMT
       X-Runtime: 
-      - "0.035377"
+      - "0.040885"
     body: 
-      string: Deleted changeset '16'
+      string: Deleted system template 'test_template_name'
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
     method: get
-    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/129/changesets
+    uri: https://10.11.230.105/katello/api/environments/1/templates
     body: 
       string: ""
     headers: 
       Http-Katello-User: 
       - admin
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="n5sfw8FP4nyjv7rCVvnxRSTb9dVlSR0rbIFhyu5JVs", oauth_signature="77npoUiLxM4uCxV0zSF8osJ3AQg%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="d6WWCXbyxKTSP1cckHKXHEYsPZs8kYifzWMPu9Kr0o", oauth_signature="707itBEO4db4BqSV46fgJiQgEdQ%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
       User-Agent: 
@@ -207,51 +244,10 @@ http_interactions:
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
       Date: 
-      - Mon, 20 Aug 2012 14:19:40 GMT
+      - Mon, 20 Aug 2012 14:19:51 GMT
       X-Runtime: 
-      - "0.028858"
+      - "0.022670"
     body: 
       string: "[]"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
-- request: 
-    method: delete
-    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/129
-    body: 
-      string: ""
-    headers: 
-      Http-Katello-User: 
-      - admin
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="r4Cyq6S5iX2WQiE7u9PkOkVeutuYINGo5h2KebblJg", oauth_signature="xDwwLup2021CW72dlgymqVCz5Aw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
-      Accept: 
-      - application/json
-      User-Agent: 
-      - OAuth gem v0.4.6
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Etag: 
-      - "\"cec63e911ab19fae412e3452cfae3b1e\""
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
-      Date: 
-      - Mon, 20 Aug 2012 14:19:40 GMT
-      X-Runtime: 
-      - "0.144898"
-    body: 
-      string: Deleted environment '129'
-    http_version: 
-  recorded_at: Wed, 01 Aug 2012 17:38:21 GMT

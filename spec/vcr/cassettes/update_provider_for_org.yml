@@ -7,169 +7,169 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      Accept: 
-      - application/json
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="y5i8Xe6YomZ4rbDwtPuwGu1c8G2Bc93ABSSmNr03Nw", oauth_signature="khUwkYwTRDLKY5XyO3AszTZonqM%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345128419", oauth_version="1.0"
-      User-Agent: 
-      - OAuth gem v0.4.6
       Http-Katello-User: 
       - admin
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="bBjtGQW5LrEQl2DhAQ9L4cTp9oCvCEhsqsjn8NaNbk", oauth_signature="RT9oQ0mHRusipoTQV%2F4kCQELse0%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345472393", oauth_version="1.0"
+      Accept: 
+      - application/json
+      User-Agent: 
+      - OAuth gem v0.4.6
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Date: 
-      - Thu, 16 Aug 2012 14:46:58 GMT
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
       Etag: 
-      - "\"0af7b10b646807961fc21cef6f804bb5\""
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Content-Type: 
-      - application/json; charset=utf-8
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      X-Runtime: 
-      - "0.022927"
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
+      - "\"0d46aad4201f04ce53f9ab31f0fdc9a7\""
       Transfer-Encoding: 
       - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Date: 
+      - Mon, 20 Aug 2012 14:19:52 GMT
+      X-Runtime: 
+      - "0.024474"
     body: 
-      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-15T18:46:58Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.com\"}"
+      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-20T14:17:54Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.com\"}"
     http_version: 
-  recorded_at: Thu, 16 Aug 2012 14:46:59 GMT
+  recorded_at: Mon, 20 Aug 2012 14:19:53 GMT
 - request: 
     method: put
     uri: https://10.11.230.105/katello/api/providers/1
     body: 
       string: "{\"provider\":{\"repository_url\":\"https://cdn.redhat.tv\"}}"
     headers: 
-      Content-Length: 
-      - "55"
-      Accept: 
-      - "*/*"
-      Authorization: 
-      - OAuth oauth_body_hash="wIb9SJIDMuf6x6OqXZBZzKDJnXs%3D", oauth_consumer_key="cloud_forms", oauth_nonce="zEzj60KFR3aSvrU7VrPl1fAsvs2eHV464R6XHjpEoU", oauth_signature="knGLHkDO2JQjCgEFFMl81NgnIPw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345128419", oauth_version="1.0"
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Content-Type: 
-      - application/json
       Http-Katello-User: 
       - admin
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "55"
+      Authorization: 
+      - OAuth oauth_body_hash="wIb9SJIDMuf6x6OqXZBZzKDJnXs%3D", oauth_consumer_key="cloud_forms", oauth_nonce="hOrpvGCQTtTPfNPHTrWdeo2cmuVSkmEsfy9RxOPUd8", oauth_signature="FE4DfpMqIbTLm6OdY3%2B8bbkWmpw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345472393", oauth_version="1.0"
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - OAuth gem v0.4.6
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Date: 
-      - Thu, 16 Aug 2012 14:46:58 GMT
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
       Etag: 
-      - "\"f030b78d93e4f50b85a520bc85e89e41\""
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Content-Type: 
-      - application/json; charset=utf-8
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      X-Runtime: 
-      - "0.052744"
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
+      - "\"740fc66fdc9accf0df340909d5a7ca2d\""
       Transfer-Encoding: 
       - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Date: 
+      - Mon, 20 Aug 2012 14:19:52 GMT
+      X-Runtime: 
+      - "0.052346"
     body: 
-      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-16T14:46:58Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.tv\"}"
+      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-20T14:19:52Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.tv\"}"
     http_version: 
-  recorded_at: Thu, 16 Aug 2012 14:46:59 GMT
+  recorded_at: Mon, 20 Aug 2012 14:19:53 GMT
 - request: 
     method: get
     uri: https://10.11.230.105/katello/api/providers/1
     body: 
       string: ""
     headers: 
-      Accept: 
-      - application/json
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="fkyIkxS2KwQkKYIzg6aTvJ6FsHkGVdBbkNLHL5zKhE", oauth_signature="upXrXJuvmPKT9NR45NcpswEm8RY%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345128419", oauth_version="1.0"
-      User-Agent: 
-      - OAuth gem v0.4.6
       Http-Katello-User: 
       - admin
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="N39UoUWFn5Ax9mVLXmt62K6sdFyqTRwQ0twEnLlg", oauth_signature="UA7uDGPPZ5gMQtT5k8sp%2BES49Pc%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345472393", oauth_version="1.0"
+      Accept: 
+      - application/json
+      User-Agent: 
+      - OAuth gem v0.4.6
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Date: 
-      - Thu, 16 Aug 2012 14:46:58 GMT
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
       Etag: 
-      - "\"f030b78d93e4f50b85a520bc85e89e41\""
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Content-Type: 
-      - application/json; charset=utf-8
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      X-Runtime: 
-      - "0.145278"
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
+      - "\"740fc66fdc9accf0df340909d5a7ca2d\""
       Transfer-Encoding: 
       - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Date: 
+      - Mon, 20 Aug 2012 14:19:52 GMT
+      X-Runtime: 
+      - "0.021370"
     body: 
-      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-16T14:46:58Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.tv\"}"
+      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-20T14:19:52Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.tv\"}"
     http_version: 
-  recorded_at: Thu, 16 Aug 2012 14:46:59 GMT
+  recorded_at: Mon, 20 Aug 2012 14:19:53 GMT
 - request: 
     method: put
     uri: https://10.11.230.105/katello/api/providers/1
     body: 
       string: "{\"provider\":{\"repository_url\":\"https://cdn.redhat.com\"}}"
     headers: 
-      Content-Length: 
-      - "56"
-      Accept: 
-      - "*/*"
-      Authorization: 
-      - OAuth oauth_body_hash="QSbFdAahR5JYlvDItVWSdIbgz7M%3D", oauth_consumer_key="cloud_forms", oauth_nonce="gGerP2QZmdhG9fwm1iabh2lRoaM8hp6UBIxftphqbY", oauth_signature="gRehJiWqmBwAjplTr7G8n8U%2F%2FUw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345128419", oauth_version="1.0"
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Content-Type: 
-      - application/json
       Http-Katello-User: 
       - admin
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "56"
+      Authorization: 
+      - OAuth oauth_body_hash="QSbFdAahR5JYlvDItVWSdIbgz7M%3D", oauth_consumer_key="cloud_forms", oauth_nonce="pbDZSwyL6a8rlXaHMrtAELpcHGiE8HbvwvNx5eqGfoI", oauth_signature="SqlWQXiC8J3t3YaGtQS8dKhjJtw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345472393", oauth_version="1.0"
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - OAuth gem v0.4.6
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Date: 
-      - Thu, 16 Aug 2012 14:46:58 GMT
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
       Etag: 
-      - "\"912014a5364229ea533a1343ff49d182\""
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Content-Type: 
-      - application/json; charset=utf-8
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
-      X-Runtime: 
-      - "0.050657"
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
+      - "\"a9d4b5fdd4bd62b4340213dccc887434\""
       Transfer-Encoding: 
       - chunked
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
+      Date: 
+      - Mon, 20 Aug 2012 14:19:52 GMT
+      X-Runtime: 
+      - "0.166101"
     body: 
-      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-16T14:46:58Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.com\"}"
+      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-20T14:19:52Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.com\"}"
     http_version: 
-  recorded_at: Thu, 16 Aug 2012 14:46:59 GMT
+  recorded_at: Mon, 20 Aug 2012 14:19:53 GMT

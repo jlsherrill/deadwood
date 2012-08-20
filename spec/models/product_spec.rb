@@ -6,7 +6,7 @@ require 'ruby-debug'
 describe Deadwood::Katello::Product do
   let(:org_id) { 'ACME_Corporation' }
   it "should create and read products for ACME_Corporation then delete them" do
-    VCR.use_cassette 'read products' do
+    VCR.use_cassette 'read_products' do
       provider = Deadwood::Katello::Provider.new(:organization_id => org_id, :provider_type => 'Custom', :repository_url => 'http://repo.example.com', :name => 'test_provider_name', :description => 'Test provider description')
       provider.save
       product = Deadwood::Katello::Product.new(:provider_id => provider.id, :name => 'Test_product', :description => 'Test description')

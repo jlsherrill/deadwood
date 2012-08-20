@@ -3,14 +3,14 @@ recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: get
-    uri: https://10.11.230.105/katello/api/providers/1
+    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/tasks
     body: 
       string: ""
     headers: 
       Http-Katello-User: 
       - admin
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="Rx49sn0ere6gSIXrd7f1w9dtSlESZkR6qF8dZZotbRU", oauth_signature="rv2Gc0jRp%2FmDwqwm%2B2vQKP6x04Q%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="w9wuxK6yfpFKU0G9nO02EEtG6dNFJrUHqtPKqlSPCo", oauth_signature="5R8ls5xuS%2ByUxlEkzDY7ThfiWgo%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
       User-Agent: 
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers: 
       Etag: 
-      - "\"0d46aad4201f04ce53f9ab31f0fdc9a7\""
+      - "\"d751713988987e9331980363e24189ce\""
       Transfer-Encoding: 
       - chunked
       Content-Type: 
@@ -37,8 +37,8 @@ http_interactions:
       Date: 
       - Mon, 20 Aug 2012 14:19:52 GMT
       X-Runtime: 
-      - "0.026500"
+      - "0.017020"
     body: 
-      string: "{\"provider_type\":\"Red Hat\",\"id\":1,\"task_status_id\":null,\"organization_id\":1,\"sync_state\":\"not_synced\",\"last_sync\":null,\"updated_at\":\"2012-08-20T14:17:54Z\",\"description\":null,\"name\":\"Red Hat\",\"created_at\":\"2012-07-02T18:47:39Z\",\"repository_url\":\"https://cdn.redhat.com\"}"
+      string: "[]"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT

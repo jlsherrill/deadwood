@@ -28,4 +28,15 @@ describe Deadwood::Katello::User do
       user.destroy
     end
   end
+
+  it "should update a user" do
+    VCR.use_cassette 'update_user' do
+      user = Deadwood::Katello::User.new(:username => 'funzo', :email => 'spam@example.com', :password => 'secretpw', :disabled => false)
+      user.save
+
+      user = Deadwood::Katello::User.find(:all, :params => { :username => 'funzo' }).first
+      user.nil?.should be_false
+      user.destroy
+    end
+  end
 end
