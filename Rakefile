@@ -23,7 +23,9 @@ spec = Gem::Specification.new do |s|
   s.email = 'calfonso@redhat.com'
   s.license = 'ASL 2.0'
   s.homepage = 'http://aeolusproject.org'
-  s.files = %w(Rakefile) + Dir.glob("{lib,spec}/**/*") + %w(COPYING)
+
+  s.files        = Dir["{lib}/**/*.rb", "COPYING", "*.md", "Rakefile", "rake/rpmtask.rb"]
+  s.test_files   = Dir["spec/**/*.*", "examples/deadwood-config.yml"]
   s.require_path = "lib"
   s.add_dependency('nokogiri', '>=0.4.0')
   s.add_dependency('rest-client')
@@ -48,7 +50,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "deadwood #{version}"
-  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('README.md')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
