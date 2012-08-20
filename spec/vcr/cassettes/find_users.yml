@@ -7,37 +7,37 @@ http_interactions:
     body: 
       string: ""
     headers: 
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="JDaF2De40HQBiZPG9ma1R21ifJuJg0FkGimRIYldA", oauth_signature="uy6gxbJ%2BA43ah%2FUBc86TGpi4M%2FU%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="JR5xYDqWGEy0y3tL6X2Pvm2A20pc1JG7MktFutr4", oauth_signature="VoCZWmY%2B07ctZxy8xJ1nvd4ES9A%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
-      Accept: 
-      - application/json
       User-Agent: 
       - OAuth gem v0.4.6
+      Accept: 
+      - application/json
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Etag: 
-      - "\"740232fc5d472b6fdbf5cadd2b4e5dc4\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Date: 
+      - Mon, 20 Aug 2012 17:47:08 GMT
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
       Transfer-Encoding: 
       - chunked
       Content-Type: 
       - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"740232fc5d472b6fdbf5cadd2b4e5dc4\""
+      X-Runtime: 
+      - "0.033087"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
-      Date: 
-      - Mon, 20 Aug 2012 14:19:47 GMT
-      X-Runtime: 
-      - "0.032064"
     body: 
       string: "[{\"password_reset_token\":null,\"password_reset_sent_at\":null,\"default_organization\":null,\"helptips_enabled\":true,\"disabled\":false,\"id\":1,\"default_environment\":null,\"own_role_id\":3,\"preferences\":{},\"updated_at\":\"2012-07-02T18:47:38Z\",\"password\":\"748d6e91bc794a3989e9d9820cbf6317fdc727e4129d13a61d3df6ece9194d453338d02c28505daee277d49566ad4827f2910ac2c1c12e1ab0b5788ccf101030T3h7mXXXPsvJtD7sDkF7kAihIKXuTHyTL81EUWcOCYbxk7kFcomuv7w3xel5y7Gq\",\"username\":\"admin\",\"created_at\":\"2012-07-02T18:47:38Z\",\"email\":\"root@localhost\",\"hidden\":false,\"page_size\":25}]"
     http_version: 

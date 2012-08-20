@@ -7,124 +7,124 @@ http_interactions:
     body: 
       string: ""
     headers: 
+      Authorization: 
+      - OAuth oauth_body_hash="2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D", oauth_consumer_key="cloud_forms", oauth_nonce="rwSu4aKweHmpuFoqJIAVRBDtU1rs4YVGzYE8rV7nlQ", oauth_signature="GIjNBT7364kBsNwoBLLxvXKdgEM%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345484830", oauth_version="1.0"
       Http-Katello-User: 
       - admin
-      Content-Type: 
-      - application/json
-      Content-Length: 
-      - "0"
-      Authorization: 
-      - OAuth oauth_body_hash="2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D", oauth_consumer_key="cloud_forms", oauth_nonce="yU0Woc2MjrqJUtyMLxRRuIJQDN0YTRflroAPLkiuus", oauth_signature="0Evt%2Ft6Mr%2BRLPyFcWxq2DyCuQQs%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345472389", oauth_version="1.0"
-      Accept: 
-      - "*/*"
       User-Agent: 
       - OAuth gem v0.4.6
+      Accept: 
+      - "*/*"
+      Content-Length: 
+      - "0"
+      Content-Type: 
+      - application/json
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Etag: 
-      - "\"27bf3697d4ae54cf58d008e8c997205d\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Date: 
+      - Mon, 20 Aug 2012 17:47:09 GMT
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
       Transfer-Encoding: 
       - chunked
       Content-Type: 
       - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"9557830e44e0a2d1123374da01b825ee\""
+      X-Runtime: 
+      - "0.397384"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
-      Date: 
-      - Mon, 20 Aug 2012 14:19:48 GMT
-      X-Runtime: 
-      - "0.406531"
     body: 
-      string: "{\"password_reset_token\":null,\"password_reset_sent_at\":null,\"default_organization\":null,\"helptips_enabled\":true,\"disabled\":false,\"id\":11,\"default_environment\":null,\"own_role_id\":13,\"preferences\":{},\"updated_at\":\"2012-08-20T14:19:48Z\",\"password\":\"0c82e962754d775f6aa5dde98601c3cd7b09333c64385bc66fe477e5ffa474b03fb88bdcd21039f21e4157f0f5c2e945a001b2f2aff2157ba66131352db9dcdaIdJViFAZvSvZaWB9XazacAvr1hEQ896oI9VnJ0Hn3mOC4kBi57g36RA4QwoGG8Fn\",\"username\":\"funzo\",\"created_at\":\"2012-08-20T14:19:48Z\",\"email\":\"spam@example.com\",\"hidden\":false,\"page_size\":25}"
+      string: "{\"password_reset_token\":null,\"password_reset_sent_at\":null,\"default_organization\":null,\"helptips_enabled\":true,\"disabled\":false,\"id\":27,\"default_environment\":null,\"own_role_id\":47,\"preferences\":{},\"updated_at\":\"2012-08-20T17:47:10Z\",\"password\":\"3516f540dccb8fe4c78f0c6652b418215a89ef7d3385f4ae349448bd3b2981e0db734c89302e21fbbd77237bc2de683cc9c768dd15cd75a5ac2bad2132185b22xUNkRIoproTejuooQIJhY2DAJRPasqb8txLI6PbS9OhKoOGDw9pv96yTjJxNhhDg\",\"username\":\"funzo\",\"created_at\":\"2012-08-20T17:47:10Z\",\"email\":\"spam@example.com\",\"hidden\":false,\"page_size\":25}"
     http_version: 
-  recorded_at: Mon, 20 Aug 2012 14:19:49 GMT
+  recorded_at: Mon, 20 Aug 2012 17:47:11 GMT
 - request: 
     method: get
     uri: https://10.11.230.105/katello/api/users?username=funzo
     body: 
       string: ""
     headers: 
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="Plo3MrGTfsdWcCMohMWMJ4ySpRdnVxJkcLgOk35Tao", oauth_signature="r4P20ojZ%2Fximbn%2B1g6dn6rh%2BDng%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345484831", oauth_version="1.0"
       Http-Katello-User: 
       - admin
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="ZIsOlVXN4QxX5h8QoJtSkFkOF2m0D4TqpYOed8jpA", oauth_signature="miPWLUTBfU1vX2r1FCyuDr2LnKI%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345472389", oauth_version="1.0"
-      Accept: 
-      - application/json
       User-Agent: 
       - OAuth gem v0.4.6
+      Accept: 
+      - application/json
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Etag: 
-      - "\"0d43059d1bfc862880f1197df54dc546\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Date: 
+      - Mon, 20 Aug 2012 17:47:10 GMT
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
       Transfer-Encoding: 
       - chunked
       Content-Type: 
       - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"5bb75861aa83c9284d8257437b4485f2\""
+      X-Runtime: 
+      - "0.030252"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
-      Date: 
-      - Mon, 20 Aug 2012 14:19:48 GMT
-      X-Runtime: 
-      - "0.047180"
     body: 
-      string: "[{\"password_reset_token\":null,\"password_reset_sent_at\":null,\"default_organization\":null,\"helptips_enabled\":true,\"disabled\":false,\"id\":11,\"default_environment\":null,\"own_role_id\":13,\"preferences\":{},\"updated_at\":\"2012-08-20T14:19:48Z\",\"password\":\"0c82e962754d775f6aa5dde98601c3cd7b09333c64385bc66fe477e5ffa474b03fb88bdcd21039f21e4157f0f5c2e945a001b2f2aff2157ba66131352db9dcdaIdJViFAZvSvZaWB9XazacAvr1hEQ896oI9VnJ0Hn3mOC4kBi57g36RA4QwoGG8Fn\",\"username\":\"funzo\",\"created_at\":\"2012-08-20T14:19:48Z\",\"email\":\"spam@example.com\",\"hidden\":false,\"page_size\":25}]"
+      string: "[{\"password_reset_token\":null,\"password_reset_sent_at\":null,\"default_organization\":null,\"helptips_enabled\":true,\"disabled\":false,\"id\":27,\"default_environment\":null,\"own_role_id\":47,\"preferences\":{},\"updated_at\":\"2012-08-20T17:47:10Z\",\"password\":\"3516f540dccb8fe4c78f0c6652b418215a89ef7d3385f4ae349448bd3b2981e0db734c89302e21fbbd77237bc2de683cc9c768dd15cd75a5ac2bad2132185b22xUNkRIoproTejuooQIJhY2DAJRPasqb8txLI6PbS9OhKoOGDw9pv96yTjJxNhhDg\",\"username\":\"funzo\",\"created_at\":\"2012-08-20T17:47:10Z\",\"email\":\"spam@example.com\",\"hidden\":false,\"page_size\":25}]"
     http_version: 
-  recorded_at: Mon, 20 Aug 2012 14:19:49 GMT
+  recorded_at: Mon, 20 Aug 2012 17:47:11 GMT
 - request: 
     method: delete
-    uri: https://10.11.230.105/katello/api/users/11
+    uri: https://10.11.230.105/katello/api/users/27
     body: 
       string: ""
     headers: 
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="2KcpLnlJl87KVL4tRMATHotDENXblO0dKZSygrE7U", oauth_signature="bNJK%2BFSd0T0asujQEXm%2F%2Fq6G%2BSw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345484831", oauth_version="1.0"
       Http-Katello-User: 
       - admin
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="AQfdWePo9FKfbXK3PdcjLUstf8jZASdNXSUQrrkEg4", oauth_signature="NosjEkpg71KnTiGwFUqw8hMspXk%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345472389", oauth_version="1.0"
-      Accept: 
-      - application/json
       User-Agent: 
       - OAuth gem v0.4.6
+      Accept: 
+      - application/json
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Etag: 
-      - "\"948e271f883866a9400b7f5c9b685e2c\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Date: 
+      - Mon, 20 Aug 2012 17:47:10 GMT
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
       Transfer-Encoding: 
       - chunked
       Content-Type: 
       - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"b1a6b70dcd5c041880ee930692305d59\""
+      X-Runtime: 
+      - "0.321100"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
-      Date: 
-      - Mon, 20 Aug 2012 14:19:48 GMT
-      X-Runtime: 
-      - "0.334628"
     body: 
-      string: Deleted user '11'
+      string: Deleted user '27'
     http_version: 
-  recorded_at: Mon, 20 Aug 2012 14:19:49 GMT
+  recorded_at: Mon, 20 Aug 2012 17:47:11 GMT
