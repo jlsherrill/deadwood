@@ -1,108 +1,107 @@
 --- 
-recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: post
     uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments?name=Test&organization_id=ACME_Corporation&prior=1
     body: 
-      string: "{\"environment\":{\"prior\":1,\"name\":\"Test\"}}"
+      string: "{\"environment\":{\"name\":\"Test\",\"prior\":1}}"
     headers: 
-      Authorization: 
-      - OAuth oauth_body_hash="9KzQFg2PcGFImVLKB3ygN4CtBaU%3D", oauth_consumer_key="cloud_forms", oauth_nonce="lmdLOvxGn8nbJ2xj1iYGDiFwPzqVtqjRtM6QMdxd3F4", oauth_signature="J%2FUi7Rdksu%2BFGOHlZVPkujXQiRg%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
-      Http-Katello-User: 
-      - admin
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Accept: 
-      - "*/*"
       Content-Length: 
       - "41"
       Content-Type: 
       - application/json
+      Http-Katello-User: 
+      - admin
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_body_hash="lCe2lMYXISkHQNPzaGPJ0yiK97Y%3D", oauth_consumer_key="cloud_forms", oauth_nonce="pHZbmVPMYFNnQtKUZKbttt5Sqzas2ke9dPUgU9sNQ", oauth_signature="CjjzsdYpaf22LpYNTxmvBQN0Wt0%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      Accept: 
+      - "*/*"
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Date: 
-      - Mon, 20 Aug 2012 17:47:01 GMT
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Etag: 
-      - "\"72b74c9a3a75c25c96bc2b43e46e481d\""
-      X-Runtime: 
-      - "0.372764"
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"898dd393b5d4041a694ec563606ece14\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Runtime: 
+      - "0.284120"
+      Transfer-Encoding: 
+      - chunked
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Date: 
+      - Mon, 20 Aug 2012 18:22:01 GMT
     body: 
-      string: "{\"library\":false,\"prior\":\"Library\",\"id\":152,\"organization\":\"ACME_Corporation\",\"organization_id\":1,\"updated_at\":\"2012-08-20T17:47:01Z\",\"name\":\"Test\",\"description\":null,\"prior_id\":1,\"created_at\":\"2012-08-20T17:47:01Z\"}"
+      string: "{\"library\":false,\"prior\":\"Library\",\"id\":158,\"organization\":\"ACME_Corporation\",\"organization_id\":1,\"updated_at\":\"2012-08-20T18:22:01Z\",\"name\":\"Test\",\"description\":null,\"prior_id\":1,\"created_at\":\"2012-08-20T18:22:01Z\"}"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
     method: post
-    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/152/changesets?description=test_description&environment_id=152&name=test_changeset&organization_id=ACME_Corporation
+    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/158/changesets?description=test_description&environment_id=158&name=test_changeset&organization_id=ACME_Corporation
     body: 
       string: "{\"changeset\":{\"description\":\"test_description\",\"name\":\"test_changeset\"}}"
     headers: 
-      Authorization: 
-      - OAuth oauth_body_hash="gvnkD2OHOpimKABbhvvI5h1H2yE%3D", oauth_consumer_key="cloud_forms", oauth_nonce="4rRx2KnDVDbpRj32eTQMPr1maPVmStGFAjWdeeEQgg", oauth_signature="TvlaFmHZxnfB9Yax2ZDaPch95kQ%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
-      Http-Katello-User: 
-      - admin
-      User-Agent: 
-      - OAuth gem v0.4.6
-      Accept: 
-      - "*/*"
       Content-Length: 
       - "72"
       Content-Type: 
       - application/json
+      Http-Katello-User: 
+      - admin
+      User-Agent: 
+      - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_body_hash="gvnkD2OHOpimKABbhvvI5h1H2yE%3D", oauth_consumer_key="cloud_forms", oauth_nonce="Gk1w3S44H8eADHopaOoJR0Nrps3250UTMAwCxFm0", oauth_signature="pQ7OARAfC3CeQ3bygoVzVNXPn0Q%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      Accept: 
+      - "*/*"
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Date: 
-      - Mon, 20 Aug 2012 17:47:02 GMT
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Etag: 
-      - "\"97dbc012c360f234fdf6de41f51d2938\""
-      X-Runtime: 
-      - "0.073973"
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"07f9dafbf7e7ca33f8965531d2556184\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Runtime: 
+      - "0.233615"
+      Transfer-Encoding: 
+      - chunked
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Date: 
+      - Mon, 20 Aug 2012 18:22:02 GMT
     body: 
-      string: "{\"task_status_id\":null,\"id\":20,\"promotion_date\":null,\"updated_at\":\"2012-08-20T17:47:02Z\",\"name\":\"test_changeset\",\"description\":\"test_description\",\"state\":\"new\",\"environment_id\":152,\"created_at\":\"2012-08-20T17:47:02Z\"}"
+      string: "{\"task_status_id\":null,\"id\":21,\"promotion_date\":null,\"updated_at\":\"2012-08-20T18:22:02Z\",\"name\":\"test_changeset\",\"description\":\"test_description\",\"state\":\"new\",\"environment_id\":158,\"created_at\":\"2012-08-20T18:22:02Z\"}"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
     method: get
-    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/152/changesets
+    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/158/changesets
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="CS9xXrkxj95ZIWZDZ0SpwVvAVwVsn7WQLShqtTsLoMQ", oauth_signature="fy%2Bo10rpOjgMWUrE0a9KSpW1V5k%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="bxa134DBNdgxKN7bDVxtkOs1bZKPlA0X35BvQMw", oauth_signature="4Ug6vgK0m620hdnrcriqm774ziQ%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
   response: 
@@ -110,40 +109,40 @@ http_interactions:
       code: 200
       message: OK
     headers: 
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Date: 
-      - Mon, 20 Aug 2012 17:47:02 GMT
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Etag: 
-      - "\"7268b4c2eb9a2eb79b72f56bb152c992\""
-      X-Runtime: 
-      - "0.023939"
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"e10bbd099dea72a71347129aa396b33c\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Runtime: 
+      - "0.029858"
+      Transfer-Encoding: 
+      - chunked
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Date: 
+      - Mon, 20 Aug 2012 18:22:02 GMT
     body: 
-      string: "[{\"task_status_id\":null,\"id\":20,\"promotion_date\":null,\"updated_at\":\"2012-08-20T17:47:02Z\",\"name\":\"test_changeset\",\"description\":\"test_description\",\"state\":\"new\",\"environment_name\":\"Test\",\"environment_id\":152,\"created_at\":\"2012-08-20T17:47:02Z\"}]"
+      string: "[{\"task_status_id\":null,\"id\":21,\"promotion_date\":null,\"updated_at\":\"2012-08-20T18:22:02Z\",\"name\":\"test_changeset\",\"description\":\"test_description\",\"state\":\"new\",\"environment_name\":\"Test\",\"environment_id\":158,\"created_at\":\"2012-08-20T18:22:02Z\"}]"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
     method: delete
-    uri: https://10.11.230.105/katello/api/changesets/20
+    uri: https://10.11.230.105/katello/api/changesets/21
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="iFHYtPVuMeMb9TZEpyIUQjY8Z6q1ZRtiwRa1FDiNI", oauth_signature="sCC0wbgItmawdfz1ZE5qs0jP2B8%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="bOpufgqWbHrrAJmirAoOmydpLcsUl458FDpeG0Ffrc", oauth_signature="JUEeZ4vAYfGpW934AHtypdHF0zM%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
   response: 
@@ -151,40 +150,40 @@ http_interactions:
       code: 200
       message: OK
     headers: 
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Date: 
-      - Mon, 20 Aug 2012 17:47:02 GMT
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Etag: 
-      - "\"a467022f7e1e3da60d98b93bf1a1cfba\""
-      X-Runtime: 
-      - "0.053789"
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"ca15b355556f4b88210a15ffd5acd433\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Runtime: 
+      - "0.036367"
+      Transfer-Encoding: 
+      - chunked
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Date: 
+      - Mon, 20 Aug 2012 18:22:02 GMT
     body: 
-      string: Deleted changeset '20'
+      string: Deleted changeset '21'
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
     method: get
-    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/152/changesets
+    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/158/changesets
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="Pj7SbZ06A35MbypfAaUK0CKatuxjEvZN86faJ5Vw", oauth_signature="zYRmA6DUBD71qUx0xWxL56uowRc%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="B2IVzzyiTmYoQVY8M6vCN9xwwoidoe2H42ehJxNA", oauth_signature="Cnxi38TtUdbVfS1oXlOP54m%2B38s%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
   response: 
@@ -192,40 +191,40 @@ http_interactions:
       code: 200
       message: OK
     headers: 
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Date: 
-      - Mon, 20 Aug 2012 17:47:02 GMT
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Etag: 
-      - "\"d751713988987e9331980363e24189ce\""
-      X-Runtime: 
-      - "0.024075"
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"d751713988987e9331980363e24189ce\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Runtime: 
+      - "0.020670"
+      Transfer-Encoding: 
+      - chunked
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Date: 
+      - Mon, 20 Aug 2012 18:22:02 GMT
     body: 
       string: "[]"
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
 - request: 
     method: delete
-    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/152
+    uri: https://10.11.230.105/katello/api/organizations/ACME_Corporation/environments/158
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="eNo2i0YW6vFgjCWNMtIsy6zq4Z38Yno4ElYWqsLRyM", oauth_signature="lL%2BfF5e87hSEFnl%2Bn9wPUwGcXNI%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="BFck0BadOoasLlpY7EREcyuKguGL5esiG2GO6Xtvv8", oauth_signature="V9nJZinoxf3NmTcOqyhK4zT33L0%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
   response: 
@@ -233,25 +232,26 @@ http_interactions:
       code: 200
       message: OK
     headers: 
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Date: 
-      - Mon, 20 Aug 2012 17:47:02 GMT
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Etag: 
-      - "\"62050170f307b487f80aade1eaadef35\""
-      X-Runtime: 
-      - "0.158352"
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"2b67d79c4ed2e4a142b79ffeed84199c\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Runtime: 
+      - "0.140933"
+      Transfer-Encoding: 
+      - chunked
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Date: 
+      - Mon, 20 Aug 2012 18:22:02 GMT
     body: 
-      string: Deleted environment '152'
+      string: Deleted environment '158'
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:21 GMT
+recorded_with: VCR 2.2.4

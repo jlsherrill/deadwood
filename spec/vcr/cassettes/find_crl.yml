@@ -1,5 +1,4 @@
 --- 
-recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: get
@@ -7,12 +6,12 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="m587oEjy0aNe7hqplbJH8YQELFNeEcbvyLTQVZfMw0", oauth_signature="G5OpEGBxV3tFddGloCF%2BMr9b7BE%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="HQWIK683b6mKWnCjx4n7XQfduev8hBsVykhdOmfqB8", oauth_signature="JnYJWJC191z%2FgsszFUDQnQVGoj4%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
   response: 
@@ -20,43 +19,44 @@ http_interactions:
       code: 200
       message: OK
     headers: 
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Date: 
-      - Mon, 20 Aug 2012 17:47:10 GMT
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Etag: 
-      - "\"d4aafe89c694068bccf6618ae655d25d\""
-      X-Runtime: 
-      - "0.041992"
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"1a8256c1e94f52908804606069cd04af\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Runtime: 
+      - "0.040079"
+      Transfer-Encoding: 
+      - chunked
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Date: 
+      - Mon, 20 Aug 2012 18:22:11 GMT
     body: 
       string: |
         -----BEGIN X509 CRL-----
         MIICqzCCAZMCAQEwDQYJKoZIhvcNAQEFBQAwgYsxCzAJBgNVBAYTAlVTMRcwFQYD
         VQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEQMA4GA1UEChMH
         UmVkIEhhdDERMA8GA1UECxMIQ2xvdWQgQlUxLDAqBgNVBAMTI2NhbGZvbnNvLWth
-        dGVsbG8udXNlcnN5cy5yZWRoYXQuY29tFw0xMjA4MjAxNzQ3MTBaFw0xMjA4MjEx
-        NzQ3MTBaoIHSMIHPMIHABgNVHSMEgbgwgbWAFMSqIkPSItVBrG7zs494s6YAF7b3
+        dGVsbG8udXNlcnN5cy5yZWRoYXQuY29tFw0xMjA4MjAxODIyMTFaFw0xMjA4MjEx
+        ODIyMTFaoIHSMIHPMIHABgNVHSMEgbgwgbWAFMSqIkPSItVBrG7zs494s6YAF7b3
         oYGRpIGOMIGLMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xpbmEx
         EDAOBgNVBAcTB1JhbGVpZ2gxEDAOBgNVBAoTB1JlZCBIYXQxETAPBgNVBAsTCENs
         b3VkIEJVMSwwKgYDVQQDEyNjYWxmb25zby1rYXRlbGxvLnVzZXJzeXMucmVkaGF0
-        LmNvbYIJAOD3fdX2G4QqMAoGA1UdFAQDAgEBMA0GCSqGSIb3DQEBBQUAA4IBAQAb
-        Hw+Zr0turlGswEeuJL7z30XiBjDFI31myTss+rqx8p7lX2mdIw9RdLSa5mEQ4xzP
-        eNP0DiFrlLdlrJJNXwxEYUYnDlEfYPQOAfL62ZUaAex7QSHOW0tEgR1mpmtmIX7P
-        w+OoMd3Ep9/nG3W068qcwbXt9fPRJDgC93ht09uZpPxeS7Mq+oDvyOwyDMq1JUe0
-        dUW56ZQThE6Nz6QFdaWbgWRld6M19l3p2epplqSvqoYnX2USHgsj8LwCcmiWItC/
-        i9GiENdUQQP3pnSEPT/bHT1HwSI3OIsr1v6xBCISZVK1xMCfEqwt3pBJaKoJeg7+
-        owYGZpUo9ulVw6kvpAOg
+        LmNvbYIJAOD3fdX2G4QqMAoGA1UdFAQDAgEBMA0GCSqGSIb3DQEBBQUAA4IBAQBy
+        LsvZ5LyefSYghOk7ENtH7CAw0c+uRjqZMR5laPnAEFJrxhIuyvn9KDQWn/P+WXvd
+        EURurgwoKOBF5cKWawGFNsKAOfIaCCbN7W1N83MBxd1bJ6G2Wxvu2SO8qY6MGpjp
+        zsL/JRVxkKZ2IFUFW8LdmG/lErIDyXuBZMSqIB51pJn7LA4bVpl0ENTrjgwK4olt
+        rmQs8MOcdKGKO3WPPWD4NB5WYSdkRt0N0j8aBfrAymDk/dQ5ioVPpV8mLsA+GVd5
+        rey9dHq45/w+0Bt0soMek5BfMPlOwq+t9MhZHKtdWoeAKsHk/XiDgoq7Y2IBDxCo
+        bbI/dc1v1+V9DF++A0fu
         -----END X509 CRL-----
 
     http_version: 
   recorded_at: Wed, 01 Aug 2012 17:38:20 GMT
+recorded_with: VCR 2.2.4

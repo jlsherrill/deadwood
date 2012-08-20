@@ -1,5 +1,4 @@
 --- 
-recorded_with: VCR 2.2.4
 http_interactions: 
 - request: 
     method: get
@@ -7,12 +6,12 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="ia9w50gMcb1DGlhrloBe8UjH5MMB5E19GIzhfoCZDMU", oauth_signature="Q88IeF9T8sqhGmpsCWOS1C2bQaI%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345484826", oauth_version="1.0"
       Http-Katello-User: 
       - admin
       User-Agent: 
       - OAuth gem v0.4.6
+      Authorization: 
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="BhQ6QApujWL0BFc7qAbkZOlVEUlldJrVsHfq9XvLHU", oauth_signature="%2B8H8JP7vzTnyRH9cmTQ2WuNsFPg%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345486926", oauth_version="1.0"
       Accept: 
       - application/json
   response: 
@@ -20,25 +19,26 @@ http_interactions:
       code: 200
       message: OK
     headers: 
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Date: 
-      - Mon, 20 Aug 2012 17:47:05 GMT
-      Server: 
-      - thin 1.2.11 codename Bat-Shit Crazy
-      Transfer-Encoding: 
-      - chunked
-      Content-Type: 
-      - application/json; charset=utf-8
-      Etag: 
-      - "\"379072b2370f9a967d92e2999ae8d266\""
-      X-Runtime: 
-      - "0.076023"
-      X-Ua-Compatible: 
-      - IE=Edge,chrome=1
       X-Candlepin-Version: 
       - katello/0.2.44-1.el6
+      Content-Type: 
+      - application/json; charset=utf-8
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Etag: 
+      - "\"379072b2370f9a967d92e2999ae8d266\""
+      Server: 
+      - thin 1.2.11 codename Bat-Shit Crazy
+      X-Runtime: 
+      - "0.077451"
+      Transfer-Encoding: 
+      - chunked
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Date: 
+      - Mon, 20 Aug 2012 18:22:05 GMT
     body: 
       string: "[{\"service_levels\":[],\"task_id\":null,\"id\":1,\"updated_at\":\"2012-08-09T14:52:28Z\",\"description\":\"Updated description\",\"name\":\"ACME_Corporation\",\"cp_key\":\"ACME_Corporation\",\"created_at\":\"2012-07-02T18:47:39Z\"}]"
     http_version: 
-  recorded_at: Mon, 20 Aug 2012 17:47:06 GMT
+  recorded_at: Mon, 20 Aug 2012 18:22:06 GMT
+recorded_with: VCR 2.2.4
