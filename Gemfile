@@ -7,7 +7,6 @@ gem "rest-client"
 gem "nokogiri"
 gem "vcr"
 gem "rspec"
-
 group :development do
 end
 

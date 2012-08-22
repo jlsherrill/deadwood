@@ -4,260 +4,260 @@ http_interactions:
     method: post
     uri: https://10.11.230.105/katello/api/roles?description=test%20role%20description&name=test_role_name
     body: 
-      string: "{\"role\":{\"description\":\"test role description\",\"name\":\"test_role_name\"}}"
+      string: "{\"role\":{\"name\":\"test_role_name\",\"description\":\"test role description\"}}"
     headers: 
-      Content-Length: 
-      - "72"
       Content-Type: 
       - application/json
-      Http-Katello-User: 
-      - admin
+      Content-Length: 
+      - "72"
       User-Agent: 
       - OAuth gem v0.4.6
       Authorization: 
-      - OAuth oauth_body_hash="bVLqKzkzB1fNRnO07OkLDyh5Ars%3D", oauth_consumer_key="cloud_forms", oauth_nonce="C37jEpFdXITRa0WSl4yvn6j6rwflXPskzO5dp8EYDlY", oauth_signature="vzYL%2Fgo1svKkdqdLwzlxu33d7Nk%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345486940", oauth_version="1.0"
+      - OAuth oauth_body_hash="nXWLLsK4lEwHyDf8IykUdry02q4%3D", oauth_consumer_key="cloud_forms", oauth_nonce="6BupiHoqfswSF9zdYk9VpqqrQrcUP7333CjfrLUZBA", oauth_signature="3yNEv1TE9MPhe2FTJ8uMcD%2FA3%2FE%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345645411", oauth_version="1.0"
       Accept: 
       - "*/*"
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Content-Type: 
       - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"18723cd79eb9e6d9cc1803b4d0323a19\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      X-Runtime: 
-      - "0.044312"
       Transfer-Encoding: 
       - chunked
+      Date: 
+      - Wed, 22 Aug 2012 14:23:30 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Date: 
-      - Mon, 20 Aug 2012 18:22:19 GMT
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Runtime: 
+      - "0.043934"
+      Etag: 
+      - "\"91352b9b8475f2dfcfeca384025de68f\""
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
     body: 
-      string: "{\"id\":55,\"updated_at\":\"2012-08-20T18:22:19Z\",\"name\":\"test_role_name\",\"description\":\"test role description\",\"locked\":false,\"created_at\":\"2012-08-20T18:22:19Z\"}"
+      string: "{\"id\":67,\"updated_at\":\"2012-08-22T14:23:31Z\",\"name\":\"test_role_name\",\"description\":\"test role description\",\"locked\":false,\"created_at\":\"2012-08-22T14:23:31Z\"}"
     http_version: 
-  recorded_at: Mon, 20 Aug 2012 18:22:20 GMT
+  recorded_at: Wed, 22 Aug 2012 14:23:31 GMT
 - request: 
     method: post
     uri: https://10.11.230.105/katello/api/users?disabled=false&email=spam@example.com&password=secretpw&username=funzo
     body: 
       string: ""
     headers: 
+      Content-Type: 
+      - application/json
       Content-Length: 
       - "0"
-      Content-Type: 
-      - application/json
-      Http-Katello-User: 
-      - admin
       User-Agent: 
       - OAuth gem v0.4.6
       Authorization: 
-      - OAuth oauth_body_hash="2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D", oauth_consumer_key="cloud_forms", oauth_nonce="fIJmNSt5cGqsuZPeNugFWhPAN57PgJSOlvnt8XaCDa4", oauth_signature="DULmGSdaRbSDstuxy4jf23U8b40%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345486940", oauth_version="1.0"
+      - OAuth oauth_body_hash="2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D", oauth_consumer_key="cloud_forms", oauth_nonce="C3uV7W9xM8Z1GUtDBvFIEJuyrHCtWrfB3amJ9E", oauth_signature="mgm1BZFxW%2FYoXfpX6jnqTb00yo0%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345645411", oauth_version="1.0"
       Accept: 
       - "*/*"
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Content-Type: 
       - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"7046aaa0177dc7b58824f5a1eaeab0e8\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      X-Runtime: 
-      - "0.540999"
       Transfer-Encoding: 
       - chunked
+      Date: 
+      - Wed, 22 Aug 2012 14:23:31 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Date: 
-      - Mon, 20 Aug 2012 18:22:19 GMT
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Runtime: 
+      - "0.383109"
+      Etag: 
+      - "\"31e09a2cdaaa9abb67a6949cbc38aee9\""
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
     body: 
-      string: "{\"password_reset_token\":null,\"password_reset_sent_at\":null,\"default_organization\":null,\"helptips_enabled\":true,\"disabled\":false,\"id\":31,\"default_environment\":null,\"own_role_id\":56,\"preferences\":{},\"updated_at\":\"2012-08-20T18:22:20Z\",\"password\":\"1fbf8622c2d3ded5d175600906b441afdafcf7b46399257a602b373e1a3dce76fedfa511df840c0681a5152c1736a9f07a04308c917a4116cb3e5c8de2837c31NHhlazj20PPl5r0VsOIIoRf0XqH9XtRjN21PlOdqrriH9odvnNkOWpoHgYtba6h5\",\"username\":\"funzo\",\"created_at\":\"2012-08-20T18:22:20Z\",\"email\":\"spam@example.com\",\"hidden\":false,\"page_size\":25}"
+      string: "{\"password_reset_token\":null,\"password_reset_sent_at\":null,\"default_organization\":null,\"helptips_enabled\":true,\"disabled\":false,\"id\":37,\"default_environment\":null,\"own_role_id\":68,\"preferences\":{},\"updated_at\":\"2012-08-22T14:23:31Z\",\"password\":\"2d3850eec6156e76b2d8f15b072f619da9df4df768d86a38f1b78b2f23083378578353896c0b09b771ce404cbd330525edd69cfa2dba0888e859b31966c85a674NanIQiPDRJQZ2BXKoVbNHdewJGSYetBMKJhnD9A5swfrAQG8Hkmw821GV1bQCXF\",\"username\":\"funzo\",\"created_at\":\"2012-08-22T14:23:31Z\",\"email\":\"spam@example.com\",\"hidden\":false,\"page_size\":25}"
     http_version: 
-  recorded_at: Mon, 20 Aug 2012 18:22:21 GMT
+  recorded_at: Wed, 22 Aug 2012 14:23:32 GMT
 - request: 
     method: post
-    uri: https://10.11.230.105/katello/api/users/31/roles?description=test%20role%20description&name=test_role&role_id=55&user_id=31
+    uri: https://10.11.230.105/katello/api/users/37/roles?description=test%20role%20description&name=test_role&role_id=67&user_id=37
     body: 
-      string: "{\"role\":{\"description\":\"test role description\",\"name\":\"test_role\",\"role_id\":55}}"
+      string: "{\"role\":{\"name\":\"test_role\",\"role_id\":67,\"description\":\"test role description\"}}"
     headers: 
-      Content-Length: 
-      - "80"
       Content-Type: 
       - application/json
-      Http-Katello-User: 
-      - admin
+      Content-Length: 
+      - "80"
       User-Agent: 
       - OAuth gem v0.4.6
       Authorization: 
-      - OAuth oauth_body_hash="yqBYBjmg8Jl45XUb59tJU8qL9lo%3D", oauth_consumer_key="cloud_forms", oauth_nonce="9FQJhE9G1j91zcEmjKPPXKY0gufYHCQlxDXB9GUkIE", oauth_signature="eZ42UOnmJCaG8cFpfHfM9LAEOEo%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345486941", oauth_version="1.0"
+      - OAuth oauth_body_hash="w5hFfZPdt9o0GZD5N3Dny82TYqM%3D", oauth_consumer_key="cloud_forms", oauth_nonce="4VeQg03OI0QkH0faTE2VxlVXRe4X9P54IsN5uSTl4", oauth_signature="8XzzLqDjQmKO8ogs2eJOYN10ppo%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345645412", oauth_version="1.0"
       Accept: 
       - "*/*"
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Vary: 
-      - Accept-Encoding
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Content-Type: 
       - text/html; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"3bdb38c92900b606b7a473aea2462ab4\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      X-Runtime: 
-      - "0.131008"
       Transfer-Encoding: 
       - chunked
+      Date: 
+      - Wed, 22 Aug 2012 14:23:31 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Date: 
-      - Mon, 20 Aug 2012 18:22:20 GMT
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Runtime: 
+      - "0.123815"
+      Vary: 
+      - Accept-Encoding
+      Etag: 
+      - "\"3bdb38c92900b606b7a473aea2462ab4\""
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
     body: 
       string: User 'funzo' assigned to role 'test_role_name'
     http_version: 
-  recorded_at: Mon, 20 Aug 2012 18:22:21 GMT
+  recorded_at: Wed, 22 Aug 2012 14:23:32 GMT
 - request: 
     method: get
-    uri: https://10.11.230.105/katello/api/users/31/roles
+    uri: https://10.11.230.105/katello/api/users/37/roles
     body: 
       string: ""
     headers: 
-      Http-Katello-User: 
-      - admin
       User-Agent: 
       - OAuth gem v0.4.6
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="83SHbwurI6Pd1RdMdXsSDg7e1Ap71Y66QIMjbaXIdA", oauth_signature="Rn0VEi2tY4tYZECIJG74xXSLrJE%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345486941", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="aPF9HolInImwDK7AvDxMZXrzZo54bVogbFxPx2tY", oauth_signature="3vKYFayzIWbH6CYbwuydP8pk8eo%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345645412", oauth_version="1.0"
       Accept: 
       - application/json
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Content-Type: 
       - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"615e67bf741b0cbc76d30cb2267917e5\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      X-Runtime: 
-      - "0.033082"
       Transfer-Encoding: 
       - chunked
+      Date: 
+      - Wed, 22 Aug 2012 14:23:31 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Date: 
-      - Mon, 20 Aug 2012 18:22:20 GMT
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Runtime: 
+      - "0.146812"
+      Etag: 
+      - "\"131281627a5aa89413000978bc78c523\""
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
     body: 
-      string: "[{\"id\":55,\"updated_at\":\"2012-08-20T18:22:19Z\",\"name\":\"test_role_name\",\"description\":\"test role description\",\"locked\":false,\"created_at\":\"2012-08-20T18:22:19Z\"}]"
+      string: "[{\"id\":67,\"updated_at\":\"2012-08-22T14:23:31Z\",\"name\":\"test_role_name\",\"description\":\"test role description\",\"locked\":false,\"created_at\":\"2012-08-22T14:23:31Z\"}]"
     http_version: 
-  recorded_at: Mon, 20 Aug 2012 18:22:21 GMT
+  recorded_at: Wed, 22 Aug 2012 14:23:32 GMT
 - request: 
     method: delete
-    uri: https://10.11.230.105/katello/api/users/31
+    uri: https://10.11.230.105/katello/api/users/37
     body: 
       string: ""
     headers: 
-      Http-Katello-User: 
-      - admin
       User-Agent: 
       - OAuth gem v0.4.6
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="RelhhMCYEzfAKs96bySBi0IhflNlUZzvwgz64HmnJ8", oauth_signature="E8orwvsAM8kadcaja4uMcmvBjhM%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345486941", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="KdWCXUkb8WlBwjirnSImEDZI7PcnjWAmP3wFuymQ", oauth_signature="Y9qtNL6wWlKiXpKRprlnXhorzgM%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345645412", oauth_version="1.0"
       Accept: 
       - application/json
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Content-Type: 
       - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"5f5a60620448195063dfe9c8c330419c\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      X-Runtime: 
-      - "0.203671"
       Transfer-Encoding: 
       - chunked
+      Date: 
+      - Wed, 22 Aug 2012 14:23:31 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Date: 
-      - Mon, 20 Aug 2012 18:22:20 GMT
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Runtime: 
+      - "0.213481"
+      Etag: 
+      - "\"8747ec95132f37adbc867e7312ab6a85\""
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
     body: 
-      string: Deleted user '31'
+      string: Deleted user '37'
     http_version: 
-  recorded_at: Mon, 20 Aug 2012 18:22:21 GMT
+  recorded_at: Wed, 22 Aug 2012 14:23:33 GMT
 - request: 
     method: delete
-    uri: https://10.11.230.105/katello/api/roles/55
+    uri: https://10.11.230.105/katello/api/roles/67
     body: 
       string: ""
     headers: 
-      Http-Katello-User: 
-      - admin
       User-Agent: 
       - OAuth gem v0.4.6
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="iMIdc8JX25eZRbQWR9VBQfdzMEifQ2ed6c1IxtXwld8", oauth_signature="y4sB6UO1Um01i6ajtyKvt4ZaY9A%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345486941", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="WyAmH5n2OCKBGCKWLtdTsERQZw2OxmbILT7RJbvIXH8", oauth_signature="KmzMe7W%2Fijlt%2F2wP4t9pGtUntE8%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1345645413", oauth_version="1.0"
       Accept: 
       - application/json
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Content-Type: 
       - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"0207e9084293ae5615c3f2b6d06f0e17\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      X-Runtime: 
-      - "0.035482"
       Transfer-Encoding: 
       - chunked
+      Date: 
+      - Wed, 22 Aug 2012 14:23:32 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Date: 
-      - Mon, 20 Aug 2012 18:22:20 GMT
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Runtime: 
+      - "0.038708"
+      Etag: 
+      - "\"7498697546fd62ad08d57e6c9f35de1a\""
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
     body: 
-      string: Deleted role '55'
+      string: Deleted role '67'
     http_version: 
-  recorded_at: Mon, 20 Aug 2012 18:22:21 GMT
+  recorded_at: Wed, 22 Aug 2012 14:23:33 GMT
 recorded_with: VCR 2.2.4

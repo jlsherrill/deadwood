@@ -6,37 +6,37 @@ http_interactions:
     body: 
       string: ""
     headers: 
-      Http-Katello-User: 
-      - admin
       User-Agent: 
       - OAuth gem v0.4.6
       Authorization: 
-      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="NICDaij4f76FLdaTGcXex6bfKQKz4c9UvrAWKBU", oauth_signature="HyKCUzEKgUlfcrLvRepVWar0A4I%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
+      - OAuth oauth_consumer_key="cloud_forms", oauth_nonce="KZ0w0Zs5AlQazrxBxtr1EiGRtw0pal40G9rIO3ox44", oauth_signature="L1qkOdlRYTL6UD9bN2t%2Fu%2BL0BJs%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1343842700", oauth_version="1.0"
       Accept: 
       - application/json
+      Http-Katello-User: 
+      - admin
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      X-Candlepin-Version: 
-      - katello/0.2.44-1.el6
       Content-Type: 
       - application/json; charset=utf-8
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Etag: 
-      - "\"740232fc5d472b6fdbf5cadd2b4e5dc4\""
       Server: 
       - thin 1.2.11 codename Bat-Shit Crazy
-      X-Runtime: 
-      - "0.032479"
       Transfer-Encoding: 
       - chunked
+      Date: 
+      - Wed, 22 Aug 2012 14:23:19 GMT
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Date: 
-      - Mon, 20 Aug 2012 18:22:09 GMT
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Runtime: 
+      - "0.044719"
+      Etag: 
+      - "\"740232fc5d472b6fdbf5cadd2b4e5dc4\""
+      X-Candlepin-Version: 
+      - katello/0.2.44-1.el6
     body: 
       string: "[{\"password_reset_token\":null,\"password_reset_sent_at\":null,\"default_organization\":null,\"helptips_enabled\":true,\"disabled\":false,\"id\":1,\"default_environment\":null,\"own_role_id\":3,\"preferences\":{},\"updated_at\":\"2012-07-02T18:47:38Z\",\"password\":\"748d6e91bc794a3989e9d9820cbf6317fdc727e4129d13a61d3df6ece9194d453338d02c28505daee277d49566ad4827f2910ac2c1c12e1ab0b5788ccf101030T3h7mXXXPsvJtD7sDkF7kAihIKXuTHyTL81EUWcOCYbxk7kFcomuv7w3xel5y7Gq\",\"username\":\"admin\",\"created_at\":\"2012-07-02T18:47:38Z\",\"email\":\"root@localhost\",\"hidden\":false,\"page_size\":25}]"
     http_version: 
