@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/calfonso/deadwood"
   s.summary     = "Ruby library to interact with Katello"
   s.description = "Ruby library to interact with Katello"
-  s.license = "MIT"
+  s.license     = "MIT"
 
   s.add_dependency "oauth"
   s.add_dependency "activeresource"

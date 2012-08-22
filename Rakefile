@@ -21,7 +21,7 @@ spec = Gem::Specification.new do |s|
   s.description = 'Ruby client for interacting with a Katello server'
   s.author = 'Chris Alfonso'
   s.email = 'calfonso@redhat.com'
-  s.license = 'ASL 2.0'
+  s.license = 'MIT'
   s.homepage = 'http://aeolusproject.org'
 
   s.files        = Dir["{lib}/**/*.rb", "COPYING", "*.md", "Rakefile", "rake/rpmtask.rb"]

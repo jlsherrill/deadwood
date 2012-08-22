@@ -9,7 +9,6 @@ gem "vcr"
 gem "rspec"
 
 group :development do
-
 end
 
 group :test do
