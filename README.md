@@ -1,8 +1,64 @@
-= deadwood
+# Deadwood
 
 Deadwood is a ruby client library to interact with a Katello server (http://katello.org/)
+## Katello API
+[The katello api can be found here](https://fedorahosted.org/katello/wiki/ApiDocLatest)
 
-== Contributing to deadwood
+### Currently tested and known to work API implementation in Deadwood
+* Activation keys
+  * index
+  * show
+  * create
+  * update
+  * destroy
+* Changesets
+  * index
+  * create
+  * destroy
+* Crl
+  * index
+* Environments
+  * index
+  * show
+  * create
+  * update
+  * destroy
+* Gpg keys
+  * show
+  * create
+  * update
+  * destroy
+* Organizations
+  * index
+  * show
+  * create
+  * update
+  * destroy
+* Products
+  * show
+  * index
+  * destroy
+* Repositories
+  * create
+  * show
+  * destroy
+* Roles
+  * index
+  * show
+  * create
+  * update
+  * destroy
+* System groups
+  * index
+  * create
+  * destroy
+* Users
+  * index
+  * create
+  * update
+  * destroy
+
+## Contributing to deadwood
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
@@ -12,7 +68,7 @@ Deadwood is a ruby client library to interact with a Katello server (http://kate
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-== Copyright
+## Copyright
 
 Copyright (c) 2012 Chris Alfonso. See COPYING for
 further details.
