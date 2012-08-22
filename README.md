@@ -4,58 +4,64 @@ Deadwood is a ruby client library to interact with a Katello server (http://kate
 ## Katello API
 [The katello api can be found here](https://fedorahosted.org/katello/wiki/ApiDocLatest)
 
-### Currently tested and known to work API implementation in Deadwood
-* Activation keys
+### [Currently tested](https://github.com/calfonso/deadwood/tree/master/spec/models) and known to work API implementation in Deadwood
+* [Activation keys](https://github.com/calfonso/deadwood/blob/master/spec/models/activation_key_spec.rb)
   * index
   * show
   * create
   * update
   * destroy
-* Changesets
+* [Changesets](https://github.com/calfonso/deadwood/blob/master/spec/models/changeset_spec.rb)
   * index
   * create
   * destroy
-* Crl
+* [Crl](https://github.com/calfonso/deadwood/blob/master/spec/models/crl_spec.rb)
   * index
-* Environments
-  * index
-  * show
-  * create
-  * update
-  * destroy
-* Gpg keys
-  * show
-  * create
-  * update
-  * destroy
-* Organizations
+* [Environments](https://github.com/calfonso/deadwood/blob/master/spec/models/environment_spec.rb)
   * index
   * show
   * create
   * update
   * destroy
-* Products
+* [Gpg keys](https://github.com/calfonso/deadwood/blob/master/spec/models/gpg_key_spec.rb)
   * show
-  * index
-  * destroy
-* Repositories
   * create
-  * show
+  * update
   * destroy
-* Roles
+* [Organizations](https://github.com/calfonso/deadwood/blob/master/spec/models/organization_spec.rb)
   * index
   * show
   * create
   * update
   * destroy
-* System groups
+* [Products](https://github.com/calfonso/deadwood/blob/master/spec/models/product_spec.rb)
+  * show
+  * index
+  * destroy
+* [Repositories](https://github.com/calfonso/deadwood/blob/master/spec/models/repository_spec.rb)
+  * create
+  * show
+  * destroy
+* [Roles](https://github.com/calfonso/deadwood/blob/master/spec/models/role_spec.rb)
+  * index
+  * show
+  * create
+  * update
+  * destroy
+* [System groups](https://github.com/calfonso/deadwood/blob/master/spec/models/system_group_spec.rb)
   * index
   * create
   * destroy
-* Users
+* [Users](https://github.com/calfonso/deadwood/blob/master/spec/models/user_spec.rb)
   * index
   * create
   * update
+  * destroy
+* [Task](https://github.com/calfonso/deadwood/blob/master/spec/models/task_spec.rb)
+  * index
+* [Templates](https://github.com/calfonso/deadwood/blob/master/spec/models/template_spec.rb)
+  * index
+  * create
   * destroy
 
 ## Contributing to deadwood
