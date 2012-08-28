@@ -24,8 +24,6 @@ Source0: %{gemname}-%{version}.gem
 
 Requires: ruby(abi) = %{rubyabi}
 Requires: rubygems
-Requires: rubygem(nokogiri) >= 1.4.0
-Requires: rubygem(rest-client)
 Requires: rubygem(oauth) >= 0.4.6
 
 BuildRequires: ruby

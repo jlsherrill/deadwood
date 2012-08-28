@@ -27,8 +27,6 @@ spec = Gem::Specification.new do |s|
   s.files        = Dir["{lib}/**/*.rb", "COPYING", "*.md", "Rakefile", "rake/rpmtask.rb"]
   s.test_files   = Dir["spec/**/*.*", "examples/deadwood-config.yml"]
   s.require_path = "lib"
-  s.add_dependency('nokogiri', '>=0.4.0')
-  s.add_dependency('rest-client')
   s.add_dependency('activeresource', '~>3.0.10')
   s.add_dependency('oauth')
   s.add_development_dependency('rspec', '~>1.3.0')

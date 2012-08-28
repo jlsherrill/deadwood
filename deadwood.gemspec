@@ -11,8 +11,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "oauth"
   s.add_dependency "activeresource"
-  s.add_dependency "rest-client"
-  s.add_dependency "nokogiri"
 
   # If you need to check in files that aren't .rb files, add them here
   s.files        = Dir["{lib}/**/*.rb", "COPYING", "*.md", "Rakefile", "rake/rpmtask.rb"]
