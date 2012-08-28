@@ -71,5 +71,10 @@ rm -rf %{buildroot}%{gemdir}/bin/ruby_noexec_wrapper
 %{gemdir}/specifications/%{gemname}-%{version}.gemspec
 
 %changelog
+* Tue Aug 28 2012 <calfonso@redhat.com> - 0.0.2-1
+- License header updates
+- Added activation key update support
+- Refactored black_list attributes
+- README updates
 * Fri Jul 27 2012  <calfonso@redhat.com> - 0.0.1-1
 - Initial package
