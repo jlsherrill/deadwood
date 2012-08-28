@@ -12,7 +12,7 @@ require './rake/rpmtask'
 RPMBUILD_DIR = "#{File.expand_path('~')}/rpmbuild"
 RPM_SPEC = "rubygem-deadwood.spec"
 RPM_SPEC_IN = "rubygem-deadwood.spec.in"
-PKG_VERSION = "0.0.2"
+PKG_VERSION = "0.0.3"
 
 spec = Gem::Specification.new do |s|
   s.name = 'deadwood'
