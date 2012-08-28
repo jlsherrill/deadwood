@@ -22,9 +22,10 @@ module Deadwood
   module Katello
     class Template < Base
       def collection_path(prefix_options = {}, query_options = nil)
+        black_list = Array[:environment_id]
         prefix_options, query_options = split_options(prefix_options) if query_options.nil?
         query_options.merge!(self.attributes)
-        self.attributes().delete(:environment_id)
+        black_list.each {|x| attributes.delete(x)}
         "#{self.class.prefix(prefix_options)}#{self.class.collection_name}#{query_string(query_options)}"
       end
     end

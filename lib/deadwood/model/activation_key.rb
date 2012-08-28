@@ -29,15 +29,11 @@ module Deadwood
       end
 
       def element_path(id = self.id, prefix_options = {}, query_options = nil)
-          prefix_options, query_options = split_options(prefix_options) if query_options.nil?
-          # Remove the attributes that aren't allowed to be updated
-          attributes.delete(:organization_id)
-          attributes.delete(:pools)
-          attributes.delete(:usage_count)
-          attributes.delete(:user_id)
-          attributes.delete(:updated_at)
-          attributes.delete(:created_at)
-          "#{self.class.prefix(prefix_options)}#{self.class.collection_name}/#{self.id}#{query_string(query_options)}"
+        black_list = Array[:organization_id, :pools, :usage_count, :user_id, :updated_at, :created_at]
+        prefix_options, query_options = split_options(prefix_options) if query_options.nil?
+        # Remove the attributes that aren't allowed to be updated
+        black_list.each {|x| attributes.delete(x)}
+        "#{self.class.prefix(prefix_options)}#{self.class.collection_name}/#{self.id}#{query_string(query_options)}"
       end
     end
   end
